@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
+    <script src="../scripts/script.js" defer></script>
+    <title>Copa del Mundo Qatar 2022 - Camino al Mundial</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-logo">
+          <a href="../index.html"><img src="../assets/wc_logo.png" width="45" 
+          alt="logo mundial Qatar 2022" class="logo" href="index.html"></a>
+          <h1 class="brand-title">Copa del Mundo Qatar 2022</h1>
+        </div>
+        
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+          <ul>
+              <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
+              <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--COUNTDOWN-->
+    
+    <section class="countdown">
+
+        <h2 class="countdown__title">Countdown</h2>
+
+        <div class="countdown__time">
+
+            <!-- Display the countdown timer in an element -->
+            <p id="demo"></p>
+    
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("November 21, 2022 7:00:00  GMT-3").getTime();
+    
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+    
+                // Get today's date and time
+                var now = new Date().getTime();
+    
+                 // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+    
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                 // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + " días " + hours + " horas "
+                + minutes + " minutos " + seconds + " segundos ";
+    
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+            </script>
+            </div>
+
+        <div class="countdown__banderas">
+            <img src="../assets/flags/senegal.png" class="banderaCD" alt="bandera de Senegal">
+            <img src="../assets/flags/holanda.png" class="banderaCD" alt="bandera de Holanda">
+        </div>
+
+        <div class="countdown__teams">
+            <h2 class="countdown__teams__black"> Senegal</h2>
+            <h2 class="countdown__teams__black"> Paises Bajos</h2>
+        </div>
+
+    </section>
+    
+        <hr class="solid">
+
+        <main>
+
+            <div class="index__titulo__grupos">
+                <img src="../assets/decoracion_r__left.png" class="titulo__decoration__r2wc">
+                <h3 class="camino__mundial">Camino al Mundial</h3>
+                <img src="../assets/decoracion_r__right.png" class="titulo__decoration__r2wc">
+            </div>
+            
+            <hr class="solid">
+            
+            <section id="section__list__eliminatorias">
+                <a href="#elimSudamericana" class="titulosEliminatorias"> <h2>Eliminatorias Sudamericanas</h2> </a>
+                <a href="#elimEuropa" class="titulosEliminatorias"><h2>Eliminatorias Europeas</h2></a>
+                <a href="#elimAfrica" class="titulosEliminatorias"><h2>Eliminatorias Africanas</h2></a>
+                <a href="#elimAsia" class="titulosEliminatorias"><h2>Eliminatorias Asiaticas</h2></a>
+                <a href="#elimOceania" class="titulosEliminatorias"><h2>Eliminatorias Oceanicas</h2></a>
+            </section>
+
+            
+
+            <hr class="solid">
+            
+
+        <!--------------------------ELIMINATORIAS SUDAMERICANAS--------------------------------------->
+
+
+        <section class="eliminatoria__tablas" >
+
+        <h2 class="eliminatoria__tabla__titulo" id="elimSudamericana">Eliminatoria Sudamericana</h2>
+        <div>
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAmerica">
+            <!--Titulo de la tabla-->
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td colspan="2" class="clasificados">Brasil</td>
+                <td>45</td>
+                <td>+35</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="clasificados">Argentina</td>
+                <td>39</td>
+                <td>+19</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="clasificados">Uruguay</td>
+                <td>28</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="clasificados">Ecuador</td>
+                <td>26</td>
+                <td>+8</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="repechaje">Perú</td>
+                <td>24</td>
+                <td>-3</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Colombia</td>
+                <td>23</td>
+                <td>+1</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Chile</td>
+                <td>19</td>
+                <td>-7</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Paraguay</td>
+                <td>16</td>
+                <td>-14</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Bolivia</td>
+                <td>15</td>
+                <td>-19</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Venezuela</td>
+                <td>10</td>
+                <td>-20</td>
+            </tr>
+        </table>
+        </div>
+
+        <h2 class="r2wc__aclaracion">Los primeros 4 clasifican directamente</h2>
+        <h2 class="r2wc__aclaracion">El quinto jugará un repechaje con una seleccion de AFC(Asia)</h2>
+
+
+        <!----------------------------------ELIMINATORIAS EUROPEAS---------------------------------->
+
+
+        <h2 class="eliminatoria__tabla__titulo" id="elimEuropa">Eliminatoria Europea</h2>
+
+        <div class="r2wc__multiplesGrupos">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa1">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo A</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Serbia</td>
+                <td>20</td>
+                <td>+9</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Portugal</td>
+                    <td>17</td>
+                    <td>+11</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Irlanda</td>
+                    <td>9</td>
+                    <td>+3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Luxemburgo</td>
+                    <td>9</td>
+                    <td>-10</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Azerbaiyan</td>
+                    <td>1</td>
+                    <td>-13</td>
+                </tr>
+    
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa2">
+            <!--Titulo de la tabla-->
+            <caption class="table__caption">Grupo B</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">España</td>
+                <td>19</td>
+                <td>+10</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Suecia</td>
+                    <td>15</td>
+                    <td>+6</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Grecia</td>
+                    <td>10</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Georgia</td>
+                    <td>7</td>
+                    <td>-6</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Kosovo</td>
+                    <td>5</td>
+                    <td>-10</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa3">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo C</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Suiza</td>
+                <td>18</td>
+                <td>+13</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Italia</td>
+                    <td>16</td>
+                    <td>+11</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Irlanda del Norte</td>
+                    <td>9</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Bulgaria</td>
+                    <td>8</td>
+                    <td>-8</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Lituania</td>
+                    <td>3</td>
+                    <td>-15</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa4">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo D</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Francia</td>
+                <td>18</td>
+                <td>+15</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Ucrania</td>
+                    <td>12</td>
+                    <td>+3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Finlandia</td>
+                    <td>11</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Bosnia</td>
+                    <td>7</td>
+                    <td>-3</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Kazajistan</td>
+                    <td>3</td>
+                    <td>-15</td>
+                </tr>
+    
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa5">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo E</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Belgica</td>
+                <td>20</td>
+                <td>+19</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Gales</td>
+                    <td>15</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Rep. Checa</td>
+                    <td>14</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Estonia</td>
+                    <td>4</td>
+                    <td>-12</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Bielorrusia</td>
+                    <td>3</td>
+                    <td>-17</td>
+                </tr>
+    
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa6">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo F</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Dinamarca</td>
+                <td>27</td>
+                <td>+27</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Escocia</td>
+                    <td>23</td>
+                    <td>+10</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Israel</td>
+                    <td>16</td>
+                    <td>+2</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Austria</td>
+                    <td>16</td>
+                    <td>+2</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Islas Feroe</td>
+                    <td>4</td>
+                    <td>-16</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Moldavia</td>
+                    <td>1</td>
+                    <td>-25</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa7">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo G</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Países Bajos</td>
+                <td>23</td>
+                <td>+25</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Turquia</td>
+                    <td>21</td>
+                    <td>+11</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Noruega</td>
+                    <td>18</td>
+                    <td>+7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Montenegro</td>
+                    <td>12</td>
+                    <td>-1</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Letonia</td>
+                    <td>9</td>
+                    <td>-3</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Gibraltar</td>
+                    <td>0</td>
+                    <td>-39</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa8">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo H</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Croacia</td>
+                <td>23</td>
+                <td>+17</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Rusia</td>
+                    <td>22</td>
+                    <td>+13</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Eslovaquia</td>
+                    <td>14</td>
+                    <td>+7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Eslovenia</td>
+                    <td>14</td>
+                    <td>+1</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Chipre</td>
+                    <td>5</td>
+                    <td>-17</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Malta</td>
+                    <td>5</td>
+                    <td>-21</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa9">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo I</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Inglaterra</td>
+                <td>26</td>
+                <td>+36</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Polonia</td>
+                    <td>20</td>
+                    <td>+19</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Albania</td>
+                    <td>18</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Hungria</td>
+                    <td>17</td>
+                    <td>+6</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Andorra</td>
+                    <td>6</td>
+                    <td>-16</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >San Marino</td>
+                    <td>0</td>
+                    <td>-45</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa10">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo J</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Alemania</td>
+                <td>27</td>
+                <td>+32</td>
+            </tr>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Macedonia</td>
+                    <td>18</td>
+                    <td>+12</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Rumania</td>
+                    <td>17</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Armenia</td>
+                    <td>12</td>
+                    <td>-11</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Islandia</td>
+                    <td>9</td>
+                    <td>-6</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" >Liechtenstein</td>
+                    <td>1</td>
+                    <td>-32</td>
+                </tr>
+        </table>
+
+
+        </div>
+        
+        <h2 class="r2wc__aclaracion">El primero clasifica de forma directa</h2>
+        <h2 class="r2wc__aclaracion">El segundo clasifica a los Playoffs</h2>
+
+        <h2 class="table__caption">Llave 1</h2>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 1</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="postergado">post.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Escocia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/escocia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">-</td>
+            <td class="calendario__resultado">-</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Ucrania</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/ucrania.png">
+                </div>
+            </td>
+            
+        </tr>
+
+        </table>
+        <h2 class="r2wc__aclaracion">Postergado por el conflicto belico en Ucrania.</h2>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 2</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Gales</p>
+                    <img class="calendario__flag__local" src="../assets/flags/gales.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">2</td>
+            <td class="calendario__resultado">1</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Austria</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/austria.png">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="hidden"></td>
+            <td colspan>25' G. Bale, 51' G. Bale;</td>
+            <td colspan="2"></td>
+            <td colspan>64' M. Sabitzer;</td>
+        </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Playoff 1</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="postergado">post.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Gales</p>
+                    <img class="calendario__flag__local" src="../assets/flags/gales.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">-</td>
+            <td class="calendario__resultado">-</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Esc/Ucr</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                </div>
+            </td>
+            
+        </tr>
+        </table>
+        <br>
+        <br>
+
+        <h2 class="table__caption">Llave 2</h2>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 1</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="suspendido">susp.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Rusia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/rusia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">-</td>
+            <td class="calendario__resultado">-</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Polonia</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/polonia.png">
+                </div>
+            </td>
+            
+        </tr>
+        </table>
+        <h2 class="r2wc__aclaracion">Rusia descalificado por FIFA</h2>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 2</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Suecia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/suecia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">1</td>
+            <td class="calendario__resultado">0</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Rep. Checa</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/republica_checa.png">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan>110' R. Quaison;</td>
+            <td colspan="2"></td>
+            <td colspan></td>
+        </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Playoff 2</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Polonia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/polonia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">2</td>
+            <td class="calendario__resultado">0</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Suecia</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/suecia.png">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan>49' R. Lewandowski; <br> 72' P. Zielinski;</td>
+            <td colspan="2"></td>
+            <td colspan></td>
+        </tr>
+        </table>
+
+        <h2 class="table__caption">Llave 3</h2>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 1</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Italia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/italia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">0</td>
+            <td class="calendario__resultado">1</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Macedonia</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/macedonia.png">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan></td>
+            <td colspan="2"></td>
+            <td colspan>90(+2)' A. Trajkovski;</td>
+        </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Semifinal 2</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Portugal</p>
+                    <img class="calendario__flag__local" src="../assets/flags/portugal.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">3</td>
+            <td class="calendario__resultado">1</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Turquia</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/turquia.png">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan>15' Otavio; 42' D. Jota; 90(+4)' Matheus;</td>
+            <td colspan="2"""></td>
+            <td colspan>65' B. Yilmaz;</td>
+        </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="partidos__r2wc">
+            <thead>
+                <tr>
+                    <th colspan="6" class="partido__r2wc">Playoff 3</th>
+                </tr>
+            </thead>
+
+        <tr>
+            <td class="finalizado">fin.</td>
+            <td colspan="1">
+                <div class="calendario__td__local">
+                    <p class="calendario__team__local">Macedonia</p>
+                    <img class="calendario__flag__local" src="../assets/flags/macedonia.png">
+                </div>
+            </td>
+
+            <td class="calendario__resultado">0</td>
+            <td class="calendario__resultado">2</td>
+
+            <td colspan="1">
+                <div class="calendario__td__visitante">
+                    <p class="calendario__team__visitante">Portugal</p>
+                    <img class="calendario__flag__visitante" src="../assets/flags/portugal.png">
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan></td>
+            <td colspan="2"></td>
+            <td colspan>32' B. Fernandes; 65' B. Fernandes;</td>
+        </tr>
+        </table>
+
+
+        <!---------------------------------ELIMINATORIAS AFRICANAS---------------------------------->
+
+        <h2 class="eliminatoria__tabla__titulo" id="elimAfrica">Eliminatorias Africanas</h2>
+        <div class="r2wc__multiplesGrupos">
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica1">
+            <!--Titulo de la tabla-->
+            
+
+            <caption class="table__caption">Grupo A</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td colspan="2" class="repechaje">Argelia</td>
+                <td>14</td>
+                <td>+21</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Burkina Faso</td>
+                <td>12</td>
+                <td>+8</td>
+            </tr>
+            <tr>
+                <td colspan="2">Niger</td>
+                <td>7</td>
+                <td>-4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Djibouti</td>
+                <td>0</td>
+                <td>-25</td>
+            </tr>
+            </table>
+
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica2">
+                <!--Titulo de la tabla-->
+                
+    
+                <caption class="table__caption">Grupo B</caption>
+                <thead class="eliminatoria__tablas__thead">
+                    <tr>
+                        <th colspan="2">Equipos</th>
+                        <th>pts.</th>
+                        <th>dif.</th>
+                    </tr>
+                </thead>
+    
+                <tr>
+                    <td colspan="2" class="repechaje">Tunez</td>
+                    <td>13</td>
+                    <td>+9</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2">Guinea Ecuatorial</td>
+                    <td>11</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Zambia</td>
+                    <td>7</td>
+                    <td>-1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Mauritania</td>
+                    <td>2</td>
+                    <td>-9</td>
+                </tr>
+                </table>
+            </div>
+
+
+            <!----------------------------------ELIMINATORIAS ASIATICAS------------------------------->
+
+
+            <h2 class="eliminatoria__tabla__titulo" id="elimAsia">Eliminatorias Asiaticas</h2>
+            <div class="r2wc__multiplesGrupos">
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia1">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Grupo A</caption>
+                <thead class="eliminatoria__tablas__thead">
+                    <tr>
+                        <th colspan="2">Equipos</th>
+                        <th>pts.</th>
+                        <th>dif.</th>
+                    </tr>
+                </thead>
+        
+                <tr>
+                    <td colspan="2" class="clasificados">Iran</td>
+                    <td>25</td>
+                    <td>+11</td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2" class="clasificados">Corea del Sur</td>
+                    <td>23</td>
+                    <td>+10</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="repechaje">EAU</td>
+                    <td>12</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Irak</td>
+                    <td>9</td>
+                    <td>-6</td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2">Siria</td>
+                    <td>6</td>
+                    <td>-7</td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2">Libano</td>
+                    <td>6</td>
+                    <td>-8</td>
+                </tr>
+        </table>
+
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia1">
+            <!--Titulo de la tabla-->
+            <caption class="table__caption">Grupo B</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Arabia Saudita</td>
+                <td>23</td>
+                <td>+6</td>
+            </tr>
+    
+            <tr>
+                <td colspan="2" class="clasificados">Japón</td>
+                <td>22</td>
+                <td>+8</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="repechaje">Australia</td>
+                <td>15</td>
+                <td>+6</td>
+            </tr>
+            <tr>
+                <td colspan="2">Oman</td>
+                <td>14</td>
+                <td>+1</td>
+            </tr>
+    
+            <tr>
+                <td colspan="2">China</td>
+                <td>6</td>
+                <td>-10</td>
+            </tr>
+    
+            <tr>
+                <td colspan="2">Vietnam</td>
+                <td>4</td>
+                <td>-11</td>
+            </tr>
+        </table>
+        </div>   
+            
+        <!----------------------------------ELIMINATORIAS OCEANICAS------------------------------->
+
+        <h2 class="eliminatoria__tabla__titulo" id="elimOceania">Eliminatorias Oceanicas</h2>
+        <div class="r2wc__multiplesGrupos">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1">
+            <!--Titulo de la tabla-->
+            <caption class="table__caption">Grupo A</caption>
+            <thead class="eliminatoria__tablas__thead">
+                <tr>
+                    <th colspan="2">Equipos</th>
+                    <th>pts.</th>
+                    <th>dif.</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td colspan="2" class="clasificados">Islas Salomón</td>
+                <td>3</td>
+                <td>+2</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="clasificados">Tahiti</td>
+                <td>0</td>
+                <td>-2</td>
+            </tr>
+            <tr>
+                <td colspan="2" >Islas Cook</td>
+                <td colspan="2">ret.</td>
+            </tr>
+            <tr>
+                <td colspan="2">Vanuatu</td>
+                <td colspan="2">ret.</td>
+            </tr>
+            </table>
+            
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Grupo B</caption>
+                <thead class="eliminatoria__tablas__thead">
+                    <tr>
+                        <th colspan="2">Equipos</th>
+                        <th>pts.</th>
+                        <th>dif.</th>
+                    </tr>
+                </thead>
+    
+                <tr>
+                    <td colspan="2" class="clasificados">Nueva Zelanda</td>
+                    <td>9</td>
+                    <td>+11</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2" class="clasificados">Papua-Nueva Guinea</td>
+                    <td>6</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td colspan="2" >Fiyi</td>
+                    <td>3</td>
+                    <td>-4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Nueva Caledonia</td>
+                    <td>0</td>
+                    <td>-8</td>
+                </tr>
+                </table>
+            </div>
+            
+        </section>
+
+    </main>
+
+        <!--FOOTERS-->
+        <footer>
+            <p>Copyright 2022 FIFA World Cup - Todos los derechos reservados (2022)</p> 
+            <div class="social-media">
+            <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+                <img src="../assets/fb_logo.png" class="redes" alt="logo de facebook">
+            </a>
+            <a href="https://www.youtube.com/fifa" target="_blank">
+                <img src="../assets/yt_logo.png" class="redes" alt="logo de youtube">
+            </a>
+        
+            <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+                <img src="../assets/tw_logo.png" class="redes" alt="logo de twitter">
+            </a>
+            </div>
+        
+            <a class="a__footer" href="contactos.html"> Contactos
+        </footer>
+    
+</body>
+</html>

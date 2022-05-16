@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
+    <script src="../scripts/script.js" defer></script>
+    <title>Copa del Mundo Qatar 2022 - Contacto</title>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="title-logo">
+              <a href="../index.html"><img src="../assets/wc_logo.png" width="45" 
+              alt="logo mundial Qatar 2022" class="logo" href="index.html"></a>
+              <h1 class="brand-title">Copa del Mundo Qatar 2022</h1>
+            </div>
+            
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+    
+            <div class="navbar-links">
+              <ul>
+                  <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
+                  <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
+                  <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
+                  <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
+                  <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
+              </ul>
+            </div>
+        </nav>
+    
+        </section>
+
+    <main class="main__contactos">   
+        <section class="formulario">
+            <h2 class="formulario__h2">¿Dudas?¿Opiniones? Contactanos</h2>
+
+            <form action="validar.php" method="post" enctype="multipart/form"> 
+                <fieldset>
+                    <legend>Datos</legend>
+                    <p class="form__fieldset__p">Nombre:</p>
+                    <input type="text" placeholder="Ingrese su nombre" class="form__sexo__input"></input>
+                    <p class="form__fieldset__p">Apellido:</p>
+                    <input type="text" placeholder="Ingrese su apellido" class="form__sexo__input">
+                    <p class="form__fieldset__p">Mail:</p>
+                    <input type="text" placeholder="Ingrese su email" class="form__sexo__input"></input>
+
+
+                    <div class="form__sexo">
+                        <p class="form__sexo__p">Sexo:</p>
+                        <label for="sexo"></label>
+                        <select name="sexo" class="form__sexo__input">
+                            <option value="H">Hombre</option>
+                            <option value="M">Mujer</option>
+                            <option value="X">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <p class="form__fieldset__p">Fecha de nacimiento:</p>
+                    <input type="date" name="edad" placeholder=>
+
+
+                    <div class="form__sexo"">
+                        <p class="form__sexo__p">¿Es mayor de edad?</p>
+                        <label for="mayor">Si</label>
+                        <input type="radio" name="edad" value="mayor" id="mayor">
+                        <label for="menor">No</label>
+                        <input type="radio" name="edad" value="menorr" id="menor">
+                    </div>
+
+
+                    <div>
+                        <label for="mensaje">Su mensaje:</label>
+                        <br>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Ingrese su mensaje" class="form__sexo__input"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <br>
+
+                
+        
+                <div>
+                    <input type="submit" value="Enviar" class="contactos__form__button">
+                    <input type="reset" value="Eliminar" class="contactos__form__button">
+                </div>
+        
+                <br>
+            </form>
+        </section>
+
+        </main>
+
+        <!--FOOTERS-->
+        <footer>
+            <p>Copyright 2022 FIFA World Cup - Todos los derechos reservados (2022)</p> 
+            <div class="social-media">
+            <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+                <img src="../assets/fb_logo.png" class="redes" alt="logo de facebook">
+            </a>
+            <a href="https://www.youtube.com/fifa" target="_blank">
+                <img src="../assets/yt_logo.png" class="redes" alt="logo de youtube">
+            </a>
+        
+            <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+                <img src="../assets/tw_logo.png" class="redes" alt="logo de twitter">
+            </a>
+            </div>
+        
+            <a class="a__footer" href="contactos.html"> Contactos
+        </footer>
+</body> 
+</html>

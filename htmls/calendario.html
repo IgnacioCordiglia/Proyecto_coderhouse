@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
+    <script src="../scripts/script.js" defer></script>
+    <title>Copa del Mundo Qatar 2022 - Calendario</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="title-logo">
+          <a href="../index.html"><img src="../assets/wc_logo.png" width="45" 
+          alt="logo mundial Qatar 2022" class="logo" href="index.html"></a>
+          <h1 class="brand-title">Copa del Mundo Qatar 2022</h1>
+        </div>
+        
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links">
+          <ul>
+              <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
+              <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
+              <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--COUNTDOWN-->
+    
+    <section class="countdown">
+
+        <h2 class="countdown__title">Countdown</h2>
+
+        <div class="countdown__time">
+
+            <!-- Display the countdown timer in an element -->
+            <p id="demo"></p>
+    
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("November 21, 2022 7:00:00  GMT-3").getTime();
+    
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+    
+                // Get today's date and time
+                var now = new Date().getTime();
+    
+                 // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+    
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                 // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + " días " + hours + " horas "
+                + minutes + " minutos " + seconds + " segundos ";
+    
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+            </script>
+            </div>
+
+        <div class="countdown__banderas">
+            <img src="../assets/flags/senegal.png" class="banderaCD" alt="bandera de Senegal">
+            <img src="../assets/flags/holanda.png" class="banderaCD" alt="bandera de Holanda">
+        </div>
+
+        <div class="countdown__teams">
+            <h2 class="countdown__teams__black"> Senegal</h2>
+            <h2 class="countdown__teams__black"> Paises Bajos</h2>
+        </div>
+
+    </section>
+
+        <!--COUNTDOWN-->
+
+
+        <hr class="solid">
+
+        <!--TITULO GRUPOS-->
+
+        <div class="index__titulo__grupos">
+            <img src="../assets/decoracion_r__left.png" class="titulo__decoration__calendario">
+            <h3 class="calendarios">Calendario</h3>
+            <img src="../assets/decoracion_r__right.png" class="titulo__decoration__calendario">
+        </div>
+
+        <hr class="solid">
+
+    <main>
+        <section class="calendario__table">
+
+            <!--LUNES 21 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Lunes 21 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 1</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Senegal</p>
+                        <img class="calendario__flag__local" src="../assets/flags/senegal.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Países Bajos</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/holanda.png">
+                    </div>
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Inglaterra</p>
+                        <img class="calendario__flag__local" src="../assets/flags/inglaterra.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Iran</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/iran.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Qatar</p>
+                        <img class="calendario__flag__local" src="../assets/flags/qatar.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Ecuador</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/ecuador.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Estados Unidos</p>
+                        <img class="calendario__flag__local" src="../assets/flags/usa.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Rep. europeo</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--MARTES 22 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Martes 22 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 1</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Argentina</p>
+                        <img class="calendario__flag__local" src="../assets/flags/argentina.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Arabia Saudita</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/arabia_saudita.png">
+                    </div>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Dinamarca</p>
+                        <img class="calendario__flag__local" src="../assets/flags/dinamarca.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Túnez</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/tunez.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Mexico</p>
+                        <img class="calendario__flag__local" src="../assets/flags/mexico.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Polonia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/polonia.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Francia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/francia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Rep. intercont. 1</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--MIERCOLES 23 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Miercoles 23 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 1</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Marruecos</p>
+                        <img class="calendario__flag__local" src="../assets/flags/marruecos.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Croacia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/croacia.png">
+                    </div>
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Aleamania</p>
+                        <img class="calendario__flag__local" src="../assets/flags/alemania.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Japón</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/japon.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">España</p>
+                        <img class="calendario__flag__local" src="../assets/flags/españa.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Rep. intercont. 2</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Belgica</p>
+                        <img class="calendario__flag__local" src="../assets/flags/belgica.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Canadá</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/canada.jpg">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--JUEVES 24 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Jueves 24 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 1</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Suiza</p>
+                        <img class="calendario__flag__local" src="../assets/flags/suiza.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Camerún</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/camerun.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Uruguay</p>
+                        <img class="calendario__flag__local" src="../assets/flags/uruguay.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Corea del Sur</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/corea_del_sur.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Portugal</p>
+                        <img class="calendario__flag__local" src="../assets/flags/portugal.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Ghana</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/ghana.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Brasil</p>
+                        <img class="calendario__flag__local" src="../assets/flags/brasil.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Serbia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/serbia.png">
+                    </div>
+                </td>
+            </tr>
+
+            <!--VIERNES 25 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Viernes 25 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 2</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Rep. europeo</p>
+                        <img class="calendario__flag__local" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Iran</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/Iran.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Uruguay</p>
+                        <img class="calendario__flag__local" src="../assets/flags/uruguay.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Corea del Sur</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/corea_del_sur.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Portugal</p>
+                        <img class="calendario__flag__local" src="../assets/flags/portugal.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Ghana</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/ghana.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Brasil</p>
+                        <img class="calendario__flag__local" src="../assets/flags/brasil.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Serbia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/serbia.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--SABADO 26 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Sabado 26 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 2</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Túnez</p>
+                        <img class="calendario__flag__local" src="../assets/flags/tunez.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Rep. intercont. 1</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Polonia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/polonia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Arabia Saudita</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/arabia_saudita.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Francia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/francia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Dinamarca</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/dinamarca.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Argentina</p>
+                        <img class="calendario__flag__local" src="../assets/flags/argentina.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">México</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/mexico.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--DOMINGO 27 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Domingo 27 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 2</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Japón</p>
+                        <img class="calendario__flag__local" src="../assets/flags/japon.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Rep. intercont. 2</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Belgica</p>
+                        <img class="calendario__flag__local" src="../assets/flags/belgica.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Marruecos</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/marruecos.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Croacia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/croacia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Canadá</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/canada.jpg">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">España</p>
+                        <img class="calendario__flag__local" src="../assets/flags/españa.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Alemania</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/alemania.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--LUNES 28 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Lunes 28 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 2</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">7:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Camerún</p>
+                        <img class="calendario__flag__local" src="../assets/flags/camerun.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Serbia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/serbia.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">10:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Corea del Sur</p>
+                        <img class="calendario__flag__local" src="../assets/flags/corea_del_sur.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Ghana</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/ghana.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">13:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Brasil</p>
+                        <img class="calendario__flag__local" src="../assets/flags/brasil.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Suiza</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/suiza.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Portugal</p>
+                        <img class="calendario__flag__local" src="../assets/flags/portugal.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Uruguay</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/uruguay.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--MARTES 29 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Martes 29 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 3</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Países Bajos</p>
+                        <img class="calendario__flag__local" src="../assets/flags/holanda.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Qatar</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/qatar.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Ecuador</p>
+                        <img class="calendario__flag__local" src="../assets/flags/ecuador.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Senegal</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/senegal.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Rep. europeo</p>
+                        <img class="calendario__flag__local" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Inglaterra</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/inglaterra.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Iran</p>
+                        <img class="calendario__flag__local" src="../assets/flags/iran.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Estados Unidos</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/usa.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--MIERCOLES 30 DE NOVIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Miercoles 30 de Noviembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 3</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Túnez</p>
+                        <img class="calendario__flag__local" src="../assets/flags/tunez.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Francia</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/francia.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Rep. intercont. 1</p>
+                        <img class="calendario__flag__local" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Dinamarca</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/dinamarca.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Polonia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/polonia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Argentina</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/argentina.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Arabia Saudita</p>
+                        <img class="calendario__flag__local" src="../assets/flags/arabia_saudita.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">México</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/mexico.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--JUEVES 1 DE DICIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Jueves 1 de Diciembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 3</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Croacia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/croacia.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Belgica</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/belgica.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Canadá</p>
+                        <img class="calendario__flag__local" src="../assets/flags/canada.jpg">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Marruecos</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/marruecos.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Japón</p>
+                        <img class="calendario__flag__local" src="../assets/flags/japon.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">España</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/españa.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Rep. intercont. 2</p>
+                        <img class="calendario__flag__local" src="../assets/flags/repechaje.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Alemania</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/alemania.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--VIERNES 2 DE DICIEMBRE-->
+
+            <table border="1" cellpading="10" class="horarios">
+                <!--Titulo de la tabla-->
+                <caption class="table__caption">Viernes 2 de Diciembre</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="5" class="fechaPartido">Fecha 3</th>
+                    </tr>
+                </thead>
+
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Corea del Sur</p>
+                        <img class="calendario__flag__local" src="../assets/flags/corea_del_sur.png">
+                    </div>
+                </td>
+
+                <td class="calendario__resultado">-</td>
+                <td class="calendario__resultado">-</td>
+
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Portugal</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/portugal.png">
+                    </div>
+                </td>
+    
+            </tr>
+            <tr>
+                <td class="horario">12:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Ghana</p>
+                        <img class="calendario__flag__local" src="../assets/flags/ghana.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Uruguay</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/uruguay.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Camerún</p>
+                        <img class="calendario__flag__local" src="../assets/flags/camerun.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Brasil</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/brasil.png">
+                    </div>
+                </td>
+    
+            </tr>
+
+            <tr>
+                <td class="horario">16:00</td>
+                <td colspan="1">
+                    <div class="calendario__td__local">
+                        <p class="calendario__team__local">Serbia</p>
+                        <img class="calendario__flag__local" src="../assets/flags/serbia.png">
+                    </div>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="1">
+                    <div class="calendario__td__visitante">
+                        <p class="calendario__team__visitante">Suiza</p>
+                        <img class="calendario__flag__visitante" src="../assets/flags/suiza.png">
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <h2 class="aclaracion">*Todos los horarios dados estan basados en el horario argentino</h2>
+        </section>
+    </main>
+
+        <!--FOOTERS-->
+    <footer>
+        <p>Copyright 2022 FIFA World Cup - Todos los derechos reservados (2022)</p> 
+        <div class="social-media">
+        <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+            <img src="../assets/fb_logo.png" class="redes" alt="logo de facebook">
+        </a>
+        <a href="https://www.youtube.com/fifa" target="_blank">
+            <img src="../assets/yt_logo.png" class="redes" alt="logo de youtube">
+        </a>
+
+        <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+            <img src="../assets/tw_logo.png" class="redes" alt="logo de twitter">
+        </a>
+        </div>
+
+        <a class="a__footer" href="contactos.html"> Contactos
+    </footer>
+    
+</body>
+</html>
