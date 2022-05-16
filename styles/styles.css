@@ -183,6 +183,8 @@ body::-webkit-scrollbar {
     font-family: "Qatar2022" ,Arial,Helvetica;
     margin:0;
     margin-top:2%;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo del texto del contador*/
@@ -191,8 +193,8 @@ body::-webkit-scrollbar {
     color:black;
     font-size: 2vmax;
     text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(0, 0, 0);
-    -webkit-animation: scale-up-center 0.5s ease-in-out both;
-    animation: scale-up-center 0.5s ease-in-out both;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo del contenedor de las banderas del contador*/
