@@ -355,7 +355,7 @@ footer{
     justify-content: right;
 }
 /*estilo de las imagenes con los logos de las distintas redes sociales*/
-.redes {
+footer img {
     width:4vmax;
     max-width: 40px;
     margin:2vmin;
