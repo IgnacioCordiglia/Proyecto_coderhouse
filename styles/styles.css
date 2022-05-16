@@ -32,6 +32,8 @@ body::-webkit-scrollbar {
     font-family: "Qatar2022" ,Arial,Helvetica;
     margin: .5rem;
     font-size: 1.1vmax;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .navbar {
@@ -76,8 +78,28 @@ body::-webkit-scrollbar {
     color: white;
     font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
     padding: 1rem;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@-webkit-keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+
+  
 .navbar-links li a:hover {
     color: gray;
 }
@@ -153,6 +175,7 @@ body::-webkit-scrollbar {
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
+
 /*estilo del titulo del contador*/
 .countdown__title {
     text-align: center;
@@ -168,6 +191,8 @@ body::-webkit-scrollbar {
     color:black;
     font-size: 2vmax;
     text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(0, 0, 0);
+    -webkit-animation: scale-up-center 0.5s ease-in-out both;
+    animation: scale-up-center 0.5s ease-in-out both;
 }
 
 /*estilo del contenedor de las banderas del contador*/
@@ -175,9 +200,10 @@ body::-webkit-scrollbar {
     display:flex;
     justify-content: center;
 }
+  
 
 /*estilo de las banderas dentro del countdown*/
-.banderaCD {
+.countdown img {
     width:20vw;
     height: 13vw;
     margin-top: 3%;
@@ -194,10 +220,62 @@ body::-webkit-scrollbar {
     margin-bottom: 1%;
 }
 
+.banderaCD1 {
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.banderaCD2 {
+    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+
 /*estilo de los nombres de los paises debajo de las banderas del contador*/
-.countdown__teams__black {
+.countdown__teams__black1 {
     font-family: "Qatar2022" ,Arial,Helvetica;
     width:15%;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.countdown__teams__black2 {
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    width:15%;
+    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las lineas separadoras*/
@@ -360,6 +438,10 @@ footer img {
     max-width: 40px;
     margin:2vmin;
 }
+
+.animate__animated.animate__bounce {
+    --animate-duration: 1s;
+  }
 
 /*estilo de los enlaces (se usa solo para los contactos en el footer)*/
 .a__footer {
