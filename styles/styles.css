@@ -330,6 +330,8 @@ hr.solid {
     color:white;
     margin:10px;
     font-size: 2.2vmax;
+    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 /*estilo que separa las tablas con los grupos en 2 grupos de 4*/
@@ -351,7 +353,42 @@ hr.solid {
     max-height:30px;
     max-width:300px;
     width:80vw;
+    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
+
+@-webkit-keyframes puff-in-ver {
+    0% {
+      -webkit-transform: scaleY(2);
+              transform: scaleY(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-ver {
+    0% {
+      -webkit-transform: scaleY(2);
+              transform: scaleY(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
 
 /*estilo que separa las tablas con los grupos en 2 grupos de 4*/
 .index__thead {
@@ -468,6 +505,8 @@ footer img {
     min-width:200px;
     margin-top: 2%;
     margin-bottom: 2%;
+    -webkit-animation: scale-in-hor-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-hor-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .calendarios {
@@ -615,6 +654,8 @@ footer img {
     min-width:225px;
     width:25vw;
     margin-bottom: 3%;
+    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 #elimAmerica {
