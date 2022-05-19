@@ -296,6 +296,8 @@ hr.solid {
     display: flex;
     justify-content: center;
     place-items: center;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las decoraciones al costado de donde dice grupos*/
@@ -781,6 +783,8 @@ footer img {
     display: flex;
     justify-content: center;
     place-items: center;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las decoraciones al costado de donde dice grupos*/
@@ -805,11 +809,15 @@ footer img {
     width:40vw;
     margin-bottom: 3%;
     align-self: left;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .img__historia {
     width:35vmax;
     border: white 3px solid;
+    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*---------------------------------------CSS CONTACTOS---------------------------------------*/ 
