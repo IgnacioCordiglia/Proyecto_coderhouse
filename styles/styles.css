@@ -643,6 +643,7 @@ footer img {
     font-size: 3vmax;
     text-shadow: 1px 0 0 black, 0 0 black, 0 1px 0 black, 0 -1px 0 black,
     1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    
 }
 
 /*estilo para las tablas en r2wc e historia*/
@@ -682,6 +683,8 @@ footer img {
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     text-decoration: none;
     margin: 0.1%;
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .partidos__r2wc {
