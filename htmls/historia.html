@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="../scripts/script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
     <title>Copa del Mundo Qatar 2022 - Historia de los mundiales</title>
 </head>
@@ -25,13 +25,13 @@
         </a>
 
         <div class="navbar-links">
-          <ul>
-              <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
-              <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
-          </ul>
+            <ul>
+                <li class="nav__a2"><a class="nav__li__a" href="../index.html" data-aos="flip-down">Inicio</a></li>   
+                <li class="nav__a2"><a class="nav__li__a" href="calendario.html" data-aos="flip-down" data-aos-delay="200">Calendario</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="r2wc.html" data-aos="flip-down" data-aos-delay="400">Camino al mundial</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="historia.html" data-aos="flip-down" data-aos-delay="600">Historia de los mundiales</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="contactos.html" data-aos="flip-down" data-aos-delay="800">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -39,7 +39,7 @@
     
     <section class="countdown">
 
-        <h2 class="countdown__title">Countdown</h2>
+        <h2 class="countdown__title" data-aos="fade-down">Countdown</h2>
 
         <div class="countdown__time">
 
@@ -79,13 +79,13 @@
             </div>
 
             <div class="countdown__banderas">
-                <img src="../assets/flags/senegal.png" class="banderaCD1" alt="bandera de Senegal">
-                <img src="../assets/flags/holanda.png" class="banderaCD2" alt="bandera de Holanda">
+                <img src="../assets/flags/senegal.png" data-aos="fade-right" alt="bandera de Senegal">
+                <img src="../assets/flags/holanda.png" data-aos="fade-left" alt="bandera de Holanda">
             </div>
-        
+    
             <div class="countdown__teams">
-                <h2 class="countdown__teams__black1"> Senegal</h2>
-                <h2 class="countdown__teams__black2"> Paises Bajos</h2>
+                <h2 class="countdown__teams__black1" data-aos="fade-right"> Senegal</h2>
+                <h2 class="countdown__teams__black2" data-aos="fade-left"> Paises Bajos</h2>
             </div>
 
     </section>
@@ -93,9 +93,9 @@
         <hr class="solid">
 
         <div class="titulo__historia">
-            <img src="../assets/decoracion_r__left.png" class="titulo__decoration__historia">
+            <img src="../assets/decoracion_r__left.png" data-aos="fade-down" class="titulo__decoration__historia">
             <h3 class="camino__mundial">Historia de los mundiales</h3>
-            <img src="../assets/decoracion_r__right.png" class="titulo__decoration__historia">
+            <img src="../assets/decoracion_r__right.png" data-aos="fade-down" class="titulo__decoration__historia">
         </div>
 
         <hr class="solid">
@@ -104,7 +104,7 @@
     <main class="body__historia">
         
         <div class="tabla__imagen__historia">
-            <table border="1" cellpading="10" class="tablaHistoria">
+            <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right">
 
                 <!--Titulo de la tabla-->
                 <caption class="table__caption">Maximos ganadores</caption>
@@ -164,7 +164,7 @@
                 </tr>
             </table>
                 
-            <img class="img__historia" src="../assets/brasil2002.jpg">
+            <img class="img__historia" src="../assets/brasil2002.jpg" data-aos="zoom-in-left">
         </div>    
 
             <!--TABLA MAXIMOS GOLEADORES-->
@@ -173,7 +173,7 @@
 
             
 
-            <table border="1" cellpading="10" class="tablaHistoria">
+            <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right">
         
                 <!--Titulo de la tabla-->
                 <caption class="table__caption">Maximos goleadores</caption>
@@ -234,13 +234,13 @@
                         <td>0</td>
                 </tr>
         </table>        
-            <img class="img__historia" src="../assets/klose.jpg">
+            <img class="img__historia" src="../assets/klose.jpg" data-aos="zoom-in-left">
         </div>
         <!--TABLA PAISES CON MAS PARTICIPACIONES-->
 
         <div class="tabla__imagen__historia">
 
-        <table border="1" cellpading="10" class="tablaHistoria">
+        <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right" >
                 <!--Titulo de la tabla-->
                 <caption class="table__caption">Participaciones totales</caption>
                     <thead>
@@ -303,7 +303,7 @@
             
 
             
-            <img class="img__historia" src="../assets/pele.jpg">
+            <img class="img__historia" src="../assets/pele.jpg" data-aos="zoom-in-left">
         </div>
         <h2 class="aclaracion">Se completara con datos veridicos a futuro</h2>
         </section>
@@ -313,19 +313,23 @@
     <footer>
         <p>Copyright 2022 FIFA World Cup Todos los derechos reservados (2022)</p> 
         <div class="social-media">
-            <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
-                <img src="../assets/fb_logo.png" class="animate__animated animate__bounce" alt="logo de facebook">
-            </a>
-            <a href="https://www.youtube.com/fifa" target="_blank">
-                <img src="../assets/yt_logo.png" class="animate__animated animate__bounce animate__delay-1s" alt="logo de youtube">
-            </a>
-        
-            <a href="https://twitter.com/FIFAWorldCup" target="_blank">
-                <img src="../assets/tw_logo.png" class="animate__animated animate__bounce animate__delay-2s" alt="logo de twitter">
-            </a>
+        <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+            <img src="../assets/fb_logo.png"  alt="logo de facebook">
+        </a>
+        <a href="https://www.youtube.com/fifa" target="_blank">
+            <img src="../assets/yt_logo.png" alt="logo de youtube">
+        </a>
+    
+        <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+            <img src="../assets/tw_logo.png"  alt="logo de twitter">
+        </a>
         </div>
-        
+    
         <a class="a__footer" href="htmls/contactos.html"> Contactos
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

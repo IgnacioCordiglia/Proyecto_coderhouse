@@ -32,8 +32,6 @@ body::-webkit-scrollbar {
     font-family: "Qatar2022" ,Arial,Helvetica;
     margin: .5rem;
     font-size: 1.1vmax;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .navbar {
@@ -78,26 +76,9 @@ body::-webkit-scrollbar {
     color: white;
     font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
     padding: 1rem;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
 }
 
-@-webkit-keyframes scale-in-hor-left {
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-      opacity: 1;
-    }
-  }
 
   
 .navbar-links li a:hover {
@@ -183,8 +164,6 @@ body::-webkit-scrollbar {
     font-family: "Qatar2022" ,Arial,Helvetica;
     margin:0;
     margin-top:2%;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo del texto del contador*/
@@ -193,8 +172,6 @@ body::-webkit-scrollbar {
     color:black;
     font-size: 2vmax;
     text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(0, 0, 0);
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo del contenedor de las banderas del contador*/
@@ -222,62 +199,15 @@ body::-webkit-scrollbar {
     margin-bottom: 1%;
 }
 
-.banderaCD1 {
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.banderaCD2 {
-    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes scale-in-hor-right {
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-  }
-  @keyframes scale-in-hor-right {
-    0% {
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-      opacity: 1;
-    }
-  }
-
 /*estilo de los nombres de los paises debajo de las banderas del contador*/
 .countdown__teams__black1 {
     font-family: "Qatar2022" ,Arial,Helvetica;
     width:15%;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .countdown__teams__black2 {
     font-family: "Qatar2022" ,Arial,Helvetica;
     width:15%;
-    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las lineas separadoras*/
@@ -296,8 +226,6 @@ hr.solid {
     display: flex;
     justify-content: center;
     place-items: center;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las decoraciones al costado de donde dice grupos*/
@@ -314,7 +242,6 @@ hr.solid {
     margin:10px;
     margin-left: 4%;
     margin-right:4%;
-    background-color: white;
 }
 
 /*estilo del fondo detras de las tablas de posiciones*/
@@ -332,8 +259,6 @@ hr.solid {
     color:white;
     margin:10px;
     font-size: 2.2vmax;
-    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 /*estilo que separa las tablas con los grupos en 2 grupos de 4*/
@@ -355,42 +280,9 @@ hr.solid {
     max-height:30px;
     max-width:300px;
     width:80vw;
-    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
-@-webkit-keyframes puff-in-ver {
-    0% {
-      -webkit-transform: scaleY(2);
-              transform: scaleY(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes puff-in-ver {
-    0% {
-      -webkit-transform: scaleY(2);
-              transform: scaleY(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
+
 
 /*estilo que separa las tablas con los grupos en 2 grupos de 4*/
 .index__thead {
@@ -480,9 +372,6 @@ footer img {
     margin:2vmin;
 }
 
-.animate__animated.animate__bounce {
-    --animate-duration: 1s;
-  }
 
 /*estilo de los enlaces (se usa solo para los contactos en el footer)*/
 .a__footer {
@@ -507,8 +396,6 @@ footer img {
     min-width:200px;
     margin-top: 2%;
     margin-bottom: 2%;
-    -webkit-animation: scale-in-hor-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: scale-in-hor-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .calendarios {
@@ -657,8 +544,6 @@ footer img {
     min-width:225px;
     width:25vw;
     margin-bottom: 3%;
-    -webkit-animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: puff-in-ver 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 #elimAmerica {
@@ -683,8 +568,6 @@ footer img {
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     text-decoration: none;
     margin: 0.1%;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .partidos__r2wc {
@@ -786,8 +669,6 @@ footer img {
     display: flex;
     justify-content: center;
     place-items: center;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*estilo de las decoraciones al costado de donde dice grupos*/
@@ -812,15 +693,11 @@ footer img {
     width:40vw;
     margin-bottom: 3%;
     align-self: left;
-    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .img__historia {
     width:35vmax;
     border: white 3px solid;
-    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*---------------------------------------CSS CONTACTOS---------------------------------------*/ 

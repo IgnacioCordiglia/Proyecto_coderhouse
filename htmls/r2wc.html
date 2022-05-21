@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../scripts/script.js" defer></script>
     <title>Copa del Mundo Qatar 2022 - Camino al Mundial</title>
 </head>
@@ -26,13 +26,13 @@
         </a>
 
         <div class="navbar-links">
-          <ul>
-              <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
-              <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
-              <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
-          </ul>
+            <ul>
+                <li class="nav__a2"><a class="nav__li__a" href="../index.html" data-aos="flip-down">Inicio</a></li>   
+                <li class="nav__a2"><a class="nav__li__a" href="calendario.html" data-aos="flip-down" data-aos-delay="200">Calendario</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="r2wc.html" data-aos="flip-down" data-aos-delay="400">Camino al mundial</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="historia.html" data-aos="flip-down" data-aos-delay="600">Historia de los mundiales</a></li>
+                <li class="nav__a2"><a class="nav__li__a" href="contactos.html" data-aos="flip-down" data-aos-delay="800">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -40,7 +40,7 @@
     
     <section class="countdown">
 
-        <h2 class="countdown__title">Countdown</h2>
+        <h2 class="countdown__title"data-aos="fade-down">Countdown</h2>
 
         <div class="countdown__time">
 
@@ -80,13 +80,13 @@
             </div>
 
             <div class="countdown__banderas">
-                <img src="../assets/flags/senegal.png" class="banderaCD1" alt="bandera de Senegal">
-                <img src="../assets/flags/holanda.png" class="banderaCD2" alt="bandera de Holanda">
+                <img src="../assets/flags/senegal.png" data-aos="fade-right" alt="bandera de Senegal">
+                <img src="../assets/flags/holanda.png" data-aos="fade-left" alt="bandera de Holanda">
             </div>
-        
+    
             <div class="countdown__teams">
-                <h2 class="countdown__teams__black1"> Senegal</h2>
-                <h2 class="countdown__teams__black2"> Paises Bajos</h2>
+                <h2 class="countdown__teams__black1" data-aos="fade-right"> Senegal</h2>
+                <h2 class="countdown__teams__black2" data-aos="fade-left"> Paises Bajos</h2>
             </div>
 
     </section>
@@ -96,19 +96,19 @@
         <main>
 
             <div class="index__titulo__grupos">
-                <img src="../assets/decoracion_r__left.png" class="titulo__decoration__r2wc">
+                <img src="../assets/decoracion_r__left.png" data-aos="fade-down"class="titulo__decoration__r2wc">
                 <h3 class="camino__mundial">Camino al Mundial</h3>
-                <img src="../assets/decoracion_r__right.png" class="titulo__decoration__r2wc">
+                <img src="../assets/decoracion_r__right.png" data-aos="fade-down" class="titulo__decoration__r2wc">
             </div>
             
             <hr class="solid">
             
             <section id="section__list__eliminatorias">
-                <a href="#elimSudamericana" class="titulosEliminatorias"> <h2>Eliminatorias Sudamericanas</h2> </a>
-                <a href="#elimEuropa" class="titulosEliminatorias"><h2>Eliminatorias Europeas</h2></a>
-                <a href="#elimAfrica" class="titulosEliminatorias"><h2>Eliminatorias Africanas</h2></a>
-                <a href="#elimAsia" class="titulosEliminatorias"><h2>Eliminatorias Asiaticas</h2></a>
-                <a href="#elimOceania" class="titulosEliminatorias"><h2>Eliminatorias Oceanicas</h2></a>
+                <a href="#elimSudamericana" class="titulosEliminatorias" data-aos="fade-down"> <h2>Eliminatorias Sudamericanas</h2> </a>
+                <a href="#elimEuropa" class="titulosEliminatorias" data-aos="fade-down"><h2>Eliminatorias Europeas</h2></a>
+                <a href="#elimAfrica" class="titulosEliminatorias" data-aos="fade-down"><h2>Eliminatorias Africanas</h2></a>
+                <a href="#elimAsia" class="titulosEliminatorias" data-aos="fade-down"><h2>Eliminatorias Asiaticas</h2></a>
+                <a href="#elimOceania" class="titulosEliminatorias" data-aos="fade-down"><h2>Eliminatorias Oceanicas</h2></a>
             </section>
 
             
@@ -121,9 +121,9 @@
 
         <section class="eliminatoria__tablas" >
 
-        <h2 class="eliminatoria__tabla__titulo" id="elimSudamericana">Eliminatoria Sudamericana</h2>
+        <h2 class="eliminatoria__tabla__titulo" id="elimSudamericana" data-aos="fade-down">Eliminatoria Sudamericana</h2>
         <div>
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAmerica">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAmerica" data-aos="fade-down">
             <!--Titulo de la tabla-->
             <thead class="eliminatoria__tablas__thead">
                 <tr>
@@ -200,10 +200,10 @@
         <!----------------------------------ELIMINATORIAS EUROPEAS---------------------------------->
 
 
-        <h2 class="eliminatoria__tabla__titulo" id="elimEuropa">Eliminatoria Europea</h2>
+        <h2 class="eliminatoria__tabla__titulo" id="elimEuropa" data-aos="fade-down">Eliminatoria Europea</h2>
 
         <div class="r2wc__multiplesGrupos">
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa1">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa1" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -246,7 +246,7 @@
     
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa2">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa2" data-aos="fade-down">
             <!--Titulo de la tabla-->
             <caption class="table__caption">Grupo B</caption>
             <thead class="eliminatoria__tablas__thead">
@@ -286,7 +286,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa3">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa3" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -328,7 +328,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa4">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa4" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -371,7 +371,7 @@
     
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa5">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa5" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -414,7 +414,7 @@
     
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa6">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa6" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -462,7 +462,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa7">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa7" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -510,7 +510,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa8">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa8" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -558,7 +558,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa9">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa9" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -606,7 +606,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa10">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimEuropa10" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -660,9 +660,9 @@
         <h2 class="r2wc__aclaracion">El primero clasifica de forma directa</h2>
         <h2 class="r2wc__aclaracion">El segundo clasifica a los Playoffs</h2>
 
-        <h2 class="table__caption">Llave 1</h2>
+        <h2 class="table__caption" data-aos="fade-down">Llave 1</h2>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 1</th>
@@ -691,9 +691,9 @@
         </tr>
 
         </table>
-        <h2 class="r2wc__aclaracion">Postergado por el conflicto belico en Ucrania.</h2>
+        <h2 class="r2wc__aclaracion" >Postergado por el conflicto belico en Ucrania.</h2>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 2</th>
@@ -728,7 +728,7 @@
         </tr>
         </table>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Playoff 1</th>
@@ -759,9 +759,9 @@
         <br>
         <br>
 
-        <h2 class="table__caption">Llave 2</h2>
+        <h2 class="table__caption" data-aos="fade-down">Llave 2</h2>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 1</th>
@@ -791,7 +791,7 @@
         </table>
         <h2 class="r2wc__aclaracion">Rusia descalificado por FIFA</h2>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 2</th>
@@ -826,7 +826,7 @@
         </tr>
         </table>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Playoff 2</th>
@@ -863,7 +863,7 @@
 
         <h2 class="table__caption">Llave 3</h2>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 1</th>
@@ -897,7 +897,7 @@
         </tr>
         </table>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Semifinal 2</th>
@@ -932,7 +932,7 @@
         </tr>
         </table>
 
-        <table border="1" cellpading="10" class="partidos__r2wc">
+        <table border="1" cellpading="10" class="partidos__r2wc" data-aos="fade-down">
             <thead>
                 <tr>
                     <th colspan="6" class="partido__r2wc">Playoff 3</th>
@@ -970,10 +970,10 @@
 
         <!---------------------------------ELIMINATORIAS AFRICANAS---------------------------------->
 
-        <h2 class="eliminatoria__tabla__titulo" id="elimAfrica">Eliminatorias Africanas</h2>
+        <h2 class="eliminatoria__tabla__titulo" id="elimAfrica" data-aos="fade-down">Eliminatorias Africanas</h2>
         <div class="r2wc__multiplesGrupos">
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica1">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica1" data-aos="fade-down">
             <!--Titulo de la tabla-->
             
 
@@ -1009,7 +1009,7 @@
             </tr>
             </table>
 
-            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica2">
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAfrica2" data-aos="fade-down">
                 <!--Titulo de la tabla-->
                 
     
@@ -1050,9 +1050,9 @@
             <!----------------------------------ELIMINATORIAS ASIATICAS------------------------------->
 
 
-            <h2 class="eliminatoria__tabla__titulo" id="elimAsia">Eliminatorias Asiaticas</h2>
+            <h2 class="eliminatoria__tabla__titulo" id="elimAsia" data-aos="fade-down">Eliminatorias Asiaticas</h2>
             <div class="r2wc__multiplesGrupos">
-            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia1">
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia1" data-aos="fade-down">
                 <!--Titulo de la tabla-->
                 <caption class="table__caption">Grupo A</caption>
                 <thead class="eliminatoria__tablas__thead">
@@ -1098,7 +1098,7 @@
                 </tr>
         </table>
 
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia1">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimAsia2" data-aos="fade-down">
             <!--Titulo de la tabla-->
             <caption class="table__caption">Grupo B</caption>
             <thead class="eliminatoria__tablas__thead">
@@ -1147,9 +1147,9 @@
             
         <!----------------------------------ELIMINATORIAS OCEANICAS------------------------------->
 
-        <h2 class="eliminatoria__tabla__titulo" id="elimOceania">Eliminatorias Oceanicas</h2>
+        <h2 class="eliminatoria__tabla__titulo" id="elimOceania" data-aos="fade-down">Eliminatorias Oceanicas</h2>
         <div class="r2wc__multiplesGrupos">
-        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1">
+        <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1" data-aos="fade-down">
             <!--Titulo de la tabla-->
             <caption class="table__caption">Grupo A</caption>
             <thead class="eliminatoria__tablas__thead">
@@ -1181,7 +1181,7 @@
             </tr>
             </table>
             
-            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1">
+            <table border="1" cellpading="10" class="tablaEliminatorias" id="elimOceania1" data-aos="fade-down">
                 <!--Titulo de la tabla-->
                 <caption class="table__caption">Grupo B</caption>
                 <thead class="eliminatoria__tablas__thead">
@@ -1224,20 +1224,24 @@
         <footer>
             <p>Copyright 2022 FIFA World Cup Todos los derechos reservados (2022)</p> 
             <div class="social-media">
-                <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
-                    <img src="../assets/fb_logo.png" class="animate__animated animate__bounce" alt="logo de facebook">
-                </a>
-                <a href="https://www.youtube.com/fifa" target="_blank">
-                    <img src="../assets/yt_logo.png" class="animate__animated animate__bounce animate__delay-1s" alt="logo de youtube">
-                </a>
-            
-                <a href="https://twitter.com/FIFAWorldCup" target="_blank">
-                    <img src="../assets/tw_logo.png" class="animate__animated animate__bounce animate__delay-2s" alt="logo de twitter">
-                </a>
+            <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+                <img src="../assets/fb_logo.png"  alt="logo de facebook">
+            </a>
+            <a href="https://www.youtube.com/fifa" target="_blank">
+                <img src="../assets/yt_logo.png" alt="logo de youtube">
+            </a>
+        
+            <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+                <img src="../assets/tw_logo.png"  alt="logo de twitter">
+            </a>
             </div>
-            
+        
             <a class="a__footer" href="htmls/contactos.html"> Contactos
         </footer>
     
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

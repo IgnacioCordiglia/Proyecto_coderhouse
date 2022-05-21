@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../scripts/script.js" defer></script>
     <title>Copa del Mundo Qatar 2022 - Contacto</title>
 </head>
@@ -25,13 +25,13 @@
             </a>
     
             <div class="navbar-links">
-              <ul>
-                  <li class="nav__a2"><a class="nav__li__a" href="../index.html">Inicio</a></li>   
-                  <li class="nav__a2"><a class="nav__li__a" href="calendario.html">Calendario</a></li>
-                  <li class="nav__a2"><a class="nav__li__a" href="r2wc.html">Camino al mundial</a></li>
-                  <li class="nav__a2"><a class="nav__li__a" href="historia.html">Historia de los mundiales</a></li>
-                  <li class="nav__a2"><a class="nav__li__a" href="contactos.html">Contacto</a></li>
-              </ul>
+                <ul>
+                    <li class="nav__a2"><a class="nav__li__a" href="../index.html" data-aos="flip-down">Inicio</a></li>   
+                    <li class="nav__a2"><a class="nav__li__a" href="calendario.html" data-aos="flip-down" data-aos-delay="200">Calendario</a></li>
+                    <li class="nav__a2"><a class="nav__li__a" href="r2wc.html" data-aos="flip-down" data-aos-delay="400">Camino al mundial</a></li>
+                    <li class="nav__a2"><a class="nav__li__a" href="historia.html" data-aos="flip-down" data-aos-delay="600">Historia de los mundiales</a></li>
+                    <li class="nav__a2"><a class="nav__li__a" href="contactos.html" data-aos="flip-down" data-aos-delay="800">Contacto</a></li>
+                </ul>
             </div>
         </nav>
     
@@ -102,19 +102,24 @@
         <footer>
             <p>Copyright 2022 FIFA World Cup Todos los derechos reservados (2022)</p> 
             <div class="social-media">
-                <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
-                    <img src="../assets/fb_logo.png" class="animate__animated animate__bounce" alt="logo de facebook">
-                </a>
-                <a href="https://www.youtube.com/fifa" target="_blank">
-                    <img src="../assets/yt_logo.png" class="animate__animated animate__bounce animate__delay-1s" alt="logo de youtube">
-                </a>
-            
-                <a href="https://twitter.com/FIFAWorldCup" target="_blank">
-                    <img src="../assets/tw_logo.png" class="animate__animated animate__bounce animate__delay-2s" alt="logo de twitter">
-                </a>
+            <a href="https://www.facebook.com/fifaworldcup/" target="_blank">
+                <img src="../assets/fb_logo.png"  alt="logo de facebook">
+            </a>
+            <a href="https://www.youtube.com/fifa" target="_blank">
+                <img src="../assets/yt_logo.png" alt="logo de youtube">
+            </a>
+        
+            <a href="https://twitter.com/FIFAWorldCup" target="_blank">
+                <img src="../assets/tw_logo.png"  alt="logo de twitter">
+            </a>
             </div>
-            
+        
             <a class="a__footer" href="htmls/contactos.html"> Contactos
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body> 
 </html>
