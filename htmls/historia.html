@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../scripts/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../favicon.ico.png">
     <title>Copa del Mundo Qatar 2022 - Historia de los mundiales</title>
@@ -102,12 +103,16 @@
         <!--TABLA MAXIMOS GANADORES-->
 
     <main class="body__historia">
-        
-        <div class="tabla__imagen__historia">
+
+        <div class="row">
+
+            <div class="tabla__imagen__historia col-12 col-lg-6">
+            <h2 class="table__caption" data-aos="zoom-in-right">Maximos ganadores</h2>
+            
             <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right">
 
                 <!--Titulo de la tabla-->
-                <caption class="table__caption">Maximos ganadores</caption>
+                
                 <thead>
                     <tr>
                         <th colspan="2">Equipos</th>
@@ -117,125 +122,148 @@
     
                 <tr>
                     <td colspan="2" >Brasil</td>
-                    <td>0</td>
+                    <td>5</td>
                 </tr>
     
+                <tr>
+                    <td colspan="2" >Alemania</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Italia</td>
+                    <td>4</td>
+                </tr>
                 <tr>
                     <td colspan="2" >Argentina</td>
-                    <td>0</td>
+                    <td>2</td>
                 </tr>
+    
+                <tr>
+                    <td colspan="2">Francia</td>
+                    <td>2</td>
+                </tr>
+    
                 <tr>
                     <td colspan="2">Uruguay</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td colspan="2" >Ecuador</td>
-                    <td>0</td>
+                    <td>2</td>
                 </tr>
     
                 <tr>
-                    <td colspan="2">Perú</td>
-                    <td>0</td>
+                    <td colspan="2">Inglaterra</td>
+                    <td>1</td>
                 </tr>
     
                 <tr>
-                    <td colspan="2">Chile</td>
-                    <td>0</td>
-                </tr>
-    
-                <tr>
-                    <td colspan="2">Colombia</td>
-                    <td>0</td>
-                </tr>
-    
-                <tr>
-                    <td colspan="2">Paraguay</td>
-                    <td>0</td>
-                </tr>
-    
-                <tr>
-                    <td colspan="2">Bolivia</td>
-                    <td>0</td>
-                </tr>
-    
-                <tr>
-                    <td colspan="2">Venezuela</td>
-                    <td>0</td>
+                    <td colspan="2">España</td>
+                    <td>1</td>
                 </tr>
             </table>
-                
-            <img class="img__historia" src="../assets/brasil2002.jpg" data-aos="zoom-in-left">
-        </div>    
-
+            </div>    
+        <div id="carouselExampleControls" class="carousel slide col-12 col-lg-5 m-3" data-aos="zoom-in-left" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="../assets/brasil2002.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="../assets/brasil1994.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="../assets/brasil1970.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
             <!--TABLA MAXIMOS GOLEADORES-->
 
-        <div class="tabla__imagen__historia">    
+            <div class="row">
 
-            
+                <div id="carouselExampleControls" class="carousel slide col-12 col-lg-5 m-3 margin-top-5" data-aos="zoom-in-left" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="../assets/brasil2002.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/brasil1994.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../assets/brasil1970.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-            <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right">
+
+                <div class="tabla__imagen__historia col-12 col-lg-6">
+                <h2 class="table__caption" data-aos="zoom-in-right">Maximos Goleadores</h2>
+                
+                <table border="1" cellpading="10" class="tablaHistoria" data-aos="zoom-in-right">
+    
+                    <!--Titulo de la tabla-->
+                    
+                    <thead>
+                        <tr>
+                            <th colspan="2">Equipos</th>
+                            <th>Copas ganadas</th>
+                        </tr>
+                    </thead>
         
-                <!--Titulo de la tabla-->
-                <caption class="table__caption">Maximos goleadores</caption>
-                <thead>
                     <tr>
-                        <th colspan="2">Jugadores</th>
-                        <th>Goles anotados</th>
+                        <td colspan="2" >Brasil</td>
+                        <td>5</td>
                     </tr>
-                </thead>
+        
+                    <tr>
+                        <td colspan="2" >Alemania</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Italia</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >Argentina</td>
+                        <td>2</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2">Francia</td>
+                        <td>2</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2">Uruguay</td>
+                        <td>2</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2">Inglaterra</td>
+                        <td>1</td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2">España</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                </div>    
             
-                <tr>
-                    <td colspan="2" >Brasil</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td colspan="2" >Argentina</td>
-                    <td>0</td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">Uruguay</td>
-                    <td>0</td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" >Ecuador</td>
-                    <td>0</td>
-                </tr>
-           
-                <tr>
-                    <td colspan="2">Perú</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td colspan="2">Chile</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td colspan="2">Colombia</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td colspan="2">Paraguay</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                    <td colspan="2">Bolivia</td>
-                    <td>0</td>
-                </tr>
-            
-                <tr>
-                        <td colspan="2">Venezuela</td>
-                        <td>0</td>
-                </tr>
-        </table>        
-            <img class="img__historia" src="../assets/klose.jpg" data-aos="zoom-in-left">
         </div>
+
         <!--TABLA PAISES CON MAS PARTICIPACIONES-->
 
         <div class="tabla__imagen__historia">
@@ -331,5 +359,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

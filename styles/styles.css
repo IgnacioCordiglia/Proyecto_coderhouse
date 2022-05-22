@@ -688,11 +688,16 @@ footer img {
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
     border-collapse: collapse;
+    border: 1px solid black;
     font-size: 1,5vmax;
     min-width:225px;
     width:40vw;
     margin-bottom: 3%;
     align-self: left;
+}
+
+.tablaHistoria td {
+    border: 1px solid black;
 }
 
 .img__historia {
