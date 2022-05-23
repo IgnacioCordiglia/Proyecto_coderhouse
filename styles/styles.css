@@ -283,6 +283,7 @@ hr.solid {
     border: 2px solid #5d0f26;
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
+    
     border-collapse: collapse;
     font-size: 1.4vmax;
     max-height:30px;
@@ -290,7 +291,9 @@ hr.solid {
     width:80vw;
 }
 
-
+.tabla td {
+    border: black 1px solid;
+}
 
 /*estilo que separa las tablas con los grupos en 2 grupos de 4*/
 .index__thead {
@@ -336,6 +339,7 @@ td {
     padding-left: 2px;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin:0px;
     font-size: 1.5vmax;
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff,
@@ -404,6 +408,15 @@ footer img {
     justify-content: center;
 }
 
+.table__caption__calendario {
+    text-align: center;
+    margin-top:1%;
+    font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff,
+    -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 /*estilo para el texto de fecha encima de las tablas enindicando la fecha en calendario*/
 .fechaPartido {
     background-color: black;
@@ -416,6 +429,10 @@ footer img {
     background-color: #5d0f26;
     color:white;
     font-size: 1.5vmax;
+}
+
+.horarios td {
+    border: black 1px solid;
 }
 
 /*estilo del contenedor en las celdas que contienen los equipo a la izquierda*/
@@ -490,6 +507,7 @@ footer img {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
 }
 
 /*estilo de la seccion con las tablas de las distintas eliminatorias*/
@@ -524,6 +542,11 @@ footer img {
     min-width:225px;
     width:25vw;
     margin-bottom: 3%;
+    min-height: 260px;
+}
+
+.tablaEliminatorias td {
+    border:1px solid black;
 }
 
 #elimAmerica {
@@ -538,7 +561,7 @@ footer img {
 
 /*estilo los titulos encima de las tablas de posiciones de cada continente en r2wc*/
 .titulosEliminatorias {
-    font-size: 1.5vmax;
+    font-size: 2vmax;
     padding-bottom: 1.5%;
     padding-top: 1.5%;
     color: #5d0f26;
@@ -547,7 +570,6 @@ footer img {
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff,
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     text-decoration: none;
-    margin: 0.1%;
 }
 
 .partidos__r2wc {
@@ -559,13 +581,15 @@ footer img {
     margin-left: 7,5vw;
     border-collapse: collapse;
     min-width:200px;
-    font-size: 2vmax;
+    font-size: vmax;
     margin-top: 2%;
     margin-bottom: 2%;
+    min-height: 40px;
 }
 
 .partidos__r2wc td {
     font-size: 1.2vmax;
+    border:1px solid black;
 }
 
 .partido__r2wc {
@@ -608,7 +632,7 @@ footer img {
 .r2wc__aclaracion {
     font-family: 'Qatar2022',Arial, Helvetica, sans-serif;
     font-size: 1.5vmax;
-    text-align: center;
+    max-width: 100%;
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff,
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
@@ -697,15 +721,17 @@ footer img {
 .main__contactos {
     background-size:cover;
     background-image: url(../assets/bgs/bg_grupos.png);
+    display:grid;
+    justify-content: center;
 }
 
 /*estilo del formulario en Contacto*/
 .formulario {
     display: flex;
-    margin-left:5px;
+    max-width:90%;
     flex-direction: column;
+    align-items: center;
     font-family:"Qatar2022" ,Arial,Helvetica;
-    width:50%;
     min-width: 250px;
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
@@ -716,8 +742,10 @@ legend {
 }
 
 .formulario__h2 {
-    margin-top:5%;
-    margin-bottom:5%;
+    font-family:"Qatar2022" ,Arial,Helvetica;
+    margin-top: 2%;
+    margin-bottom:2%;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 .formulario p {
@@ -737,10 +765,6 @@ fieldset {
     align-items: baseline;
 }
 
-/*estilo para el texto de "sexo:"*/
-.form__sexo__p {
-    margin-right: 3%;
-}
 
 /*estilo para las opciones al elegir sexo*/
 .form__sexo__input {
