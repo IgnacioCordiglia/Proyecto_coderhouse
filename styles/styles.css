@@ -659,6 +659,10 @@ footer img {
 .body__historia {
     background-image: url(../assets/bgs/bg_grupos.png);
     background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .tabla__imagen__historia {
@@ -670,7 +674,8 @@ footer img {
 
 .titulo__historia {
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /*estilo de las decoraciones al costado de donde dice grupos*/
