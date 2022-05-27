@@ -51,7 +51,7 @@ body::-webkit-scrollbar {
     color: white;
     text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 
     0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 
-    rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 3px 3px 4px #000000;
 }
 
 .brand-title {
@@ -154,12 +154,8 @@ body::-webkit-scrollbar {
     background-size: cover;
     display:grid;
     grid-template-rows:0.3fr 0.3fr 0.3fr;
-    grid-template-areas: 
-    "titulo"
-    "countdown"
-    "bandera bandera"
-    "pais pais";
-    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 
+    3px 3px 4px #000000;
 }
 
 
@@ -177,7 +173,8 @@ body::-webkit-scrollbar {
     margin-top: 1%;
     color:black;
     font-size: 2vmax;
-    text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(0, 0, 0);
+    text-shadow: 2px 0 0 rgb(255, 255, 255), -2px 0 0 rgb(255, 255, 255), 0 2px 0 rgb(255, 255, 255), 0 -2px 0 rgb(255, 255, 255), 2px 2px rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), -2px 2px 0 rgb(0, 0, 0), 
+    3px 3px 4px #000000;
 }
 
 /*estilo del contenedor de las banderas del contador*/
@@ -194,7 +191,7 @@ body::-webkit-scrollbar {
     max-width: 210px;
     max-height:140px;
     justify-content: center;
-
+    box-shadow: 2px 2px 4px #000000;
 }
 
 /*estilo del contenedor de los nombres de los paises debajo de las banderas*/
@@ -287,6 +284,7 @@ hr.solid {
     max-height:30px;
     max-width:276px;
     width:80vw;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tabla td {
@@ -378,6 +376,7 @@ footer img {
     min-width:200px;
     margin-top: 2%;
     margin-bottom: 2%;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .calendarios {
@@ -408,7 +407,7 @@ footer img {
 
 .table__caption__calendario {
     text-align: center;
-    margin-top:1%;
+    padding-top:3%;
     font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
     color: black;
     text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff,
@@ -422,11 +421,15 @@ footer img {
     font-size: 2vmax;
 }
 
-/*estilo de las celdas que contienen los horarios de los partidosen calendario*/
+/*estilo de las celdas que contienen los horarios de los partidos en calendario*/
 .horario {
     background-color: #5d0f26;
     color:white;
     font-size: 1.5vmax;
+}
+
+.horarios{
+    background-color: rgb(241, 241, 241);
 }
 
 .horarios td {
@@ -537,6 +540,7 @@ footer img {
 #elimAmerica {
     width:50vw;
     min-width:200px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 #elimAmerica th {
@@ -558,6 +562,7 @@ footer img {
     width:19vw;
     margin-bottom: 3%;
     min-height: 200px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tablaEliminatoriasEuropa th {
@@ -579,6 +584,7 @@ footer img {
     width:19vw;
     margin-bottom: 3%;
     min-height: 160px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tablaEliminatoriasAfrica td {
@@ -605,6 +611,7 @@ footer img {
     width:25vw;
     margin-bottom: 3%;
     min-height: 260px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tablaEliminatorias th{
@@ -625,8 +632,8 @@ footer img {
 /*estilo los titulos encima de las tablas de posiciones de cada continente en r2wc*/
 .titulosEliminatorias {
     font-size: 2vmax;
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
     color: #5d0f26;
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
@@ -636,7 +643,7 @@ footer img {
 }
 
 .partidos__r2wc {
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     border-color: #8A1538;
     font-family:"Qatar2022",Arial,Helvetica;
     text-align: center;
@@ -648,6 +655,7 @@ footer img {
     margin-top: 2%;
     margin-bottom: 2%;
     min-height: 40px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -766,11 +774,13 @@ footer img {
     min-width:220px;
     width:80vw;
     margin-bottom: 3%;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tablaHistoria td {
     border: 1px solid black;
 }
+
 
 /*---------------------------------------CSS CONTACTOS---------------------------------------*/ 
 
