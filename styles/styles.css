@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../assets/bgs/bg_nav.jpg);
+    background-image: url(../assets/bgs/bg_nav.webp);
     background-size: cover;
     font-family: "Qatar2022" ,Arial,Helvetica;
     color: white;
@@ -160,7 +160,7 @@ body::-webkit-scrollbar {
 .countdown {
     text-align: center;
     font-family: "Qatar2022" ,Arial,Helvetica;
-    background-image: url("../assets/bgs/bg_countdown.jfif");
+    background-image: url("../assets/bgs/bg_countdown.webp");
     background-position-y: center;
     background-size: cover;
     display:grid;
@@ -261,7 +261,7 @@ hr.solid {
 
 /*estilo del fondo detras de las tablas de posiciones*/
 #tablas {
-    background-image: url(../assets/bgs/bg_grupos.png);
+    background-image: url(../assets/bgs/bg_grupos.webp);
     background-size: cover;
     text-align: center;
     margin: 0px;
@@ -292,7 +292,7 @@ hr.solid {
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
     border-collapse: collapse;
-    font-size: 1.3vmax;
+    font-size: 16px;
     max-height:30px;
     max-width:276px;
     width:80vw;
@@ -415,7 +415,7 @@ footer img {
 
 /*estilo de la seccion que contiene todas las tablas*/
 .calendario__table {
-    background-image: url(../assets/bgs/bg_grupos.png);
+    background-image: url(../assets/bgs/bg_grupos.webp);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -535,7 +535,7 @@ del contenido*/
 
 /*estilo de la seccion con los links a las distintas eliminatorias*/
 #section__list__eliminatorias {
-    background-image: url(../assets/bgs/bg_flags.jpg);
+    background-image: url(../assets/bgs/bg_flags.webp);
     background-position-y: center;
     background-size: cover;
     display: flex;
@@ -545,7 +545,7 @@ del contenido*/
 
 /*estilo de la seccion con las tablas de las distintas eliminatorias*/
 .eliminatoria__tablas {
-    background-image: url(../assets/bgs/bg_grupos.png);
+    background-image: url(../assets/bgs/bg_grupos.webp);
     background-size: cover;
     display:flex;
     flex-direction: column;
@@ -762,7 +762,7 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 
 /*estilo del body de la pagina*/
 .body__historia {
-    background-image: url(../assets/bgs/bg_grupos.png);
+    background-image: url(../assets/bgs/bg_grupos.webp);
     background-size: cover;
     display:flex;
     flex-wrap: wrap;
@@ -824,7 +824,7 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 /*estilo para la seccion contenedora del cuestionario*/
 .main__contactos {
     background-size:cover;
-    background-image: url(../assets/bgs/bg_grupos.png);
+    background-image: url(../assets/bgs/bg_grupos.webp);
     display:grid;
     justify-content: center;
 }

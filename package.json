@@ -1,0 +1,29 @@
+{
+  "name": "proyecto_coderhouse",
+  "version": "1.0.0",
+  "description": "\"pagina con informacion acerca del mundial de futbol Qatar 2022\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnacioCordiglia/Proyecto_coderhouse.git"
+  },
+  "keywords": [
+    "futbol",
+    "argentina",
+    "mundial",
+    "qatar"
+  ],
+  "author": "Ignacio Cordiglia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnacioCordiglia/Proyecto_coderhouse/issues"
+  },
+  "homepage": "https://github.com/IgnacioCordiglia/Proyecto_coderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
