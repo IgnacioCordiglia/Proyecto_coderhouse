@@ -1,0 +1,136 @@
+
+/*---------------------------------------CSS CALENDARIO---------------------------------------*/ 
+
+
+/*estilo de la tabla de los partidos con horarios en calendario*/
+.horarios {
+    background-color: white;
+    border-color: #8A1538;
+    font-family:"Qatar2022",Arial,Helvetica;
+    text-align: center;
+    width:85vw;
+    margin-left: 7.5%;
+    border-collapse: collapse;
+    min-width:200px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+/*estilo de la lista no ordenada de las paginas del navbar*/
+.calendarios {
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    color:#5d0f26;
+    font-size: 3vmax;
+    text-align: center;
+    margin:10px;
+    margin-left: 4%;
+    margin-right:4%;
+    background-color: white;
+}
+
+/*estilo de las decoraciones en el titulo "calendario"*/
+.titulo__decoration__calendario {
+    width:9vmax;
+    margin: 0%;
+}
+
+/*estilo de la seccion que contiene todas las tablas*/
+.calendario__table {
+    background-image: url(../assets/bgs/bg_grupos.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*estilo las fechas encima de la tabla con los partidos*/
+.table__caption__calendario {
+    text-align: center;
+    padding-top:3%;
+    font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: $borde-y-sombra-negro
+}
+
+/*estilo para el texto de fecha encima de las tablas enindicando la fecha en calendario*/
+.fechaPartido {
+    background-color: black;
+    color:white;
+    font-size: 2vmax;
+}
+
+/*estilo de las celdas que contienen los horarios de los partidos en calendario*/
+.horario {
+    background-color: #5d0f26;
+    color:white;
+    font-size: 1.5vmax;
+}
+
+/*estilo de las tablas, cambia el color ya que si es completamente blanco, 
+a veces ciertas banderas con blanco se ven mal*/
+
+.horarios{
+    background-color: rgb(241, 241, 241);
+
+    /*estilo de las celdas dentro de las tabla*/
+    td {
+    border: black 1px solid;
+}
+}
+
+
+
+/*estilo del contenedor en las celdas que contienen los equipo a la izquierda*/
+.calendario__td__local {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/*estilo del contenedor en las celdas que contienen los equipo a la derecha*/
+.calendario__td__visitante {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+}
+
+/*estilo de una celda para que el largo de todas las tablas sea consistente, independientemente
+del contenido*/
+.td__local{
+    width:40%;
+    height:3vmax;
+}
+
+/*estilo de la bandera en la celda del equipo a la izquierda*/
+.calendario__flag__local {
+    width:20%;
+    padding: 0%;
+}
+
+/*estilo de la bandera en la celda del equipo a la derecha*/
+.calendario__flag__visitante {
+    width:20%;
+    padding: 0%;
+}
+
+/*estilo del texto en la celda del equipo a la izquierda*/
+.calendario__team__local {
+    margin: 0;
+    padding-right: 2%;
+    font-size: 1.5vmax;
+}
+
+/*estilo del texto en la celda del equipo a la derecha*/
+.calendario__team__visitante {
+    margin: 0;
+    padding-left: 2%;
+    font-size: 1.5vmax;
+}
+
+/*estilo de las celdas entre equipo y equipo que indican el resultado del partido*/
+.calendario__resultado {
+    width: 5%;
+    min-width:20px;
+}

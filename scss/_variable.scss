@@ -1,0 +1,13 @@
+/*---------------------------------------VARIABLES---------------------------------------*/ 
+
+/*sombra y bordes para textos en blanco*/
+$borde-y-sombra-blanco: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 
+0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 
+rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 3px 3px 4px #000000;
+
+/*sombra y bordes para textos en negro*/
+$borde-y-sombra-negro: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px
+#fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 4px #000000;
+
+/*color bordo de la bandera de Qatar*/
+$color-qatar: #8A1538;

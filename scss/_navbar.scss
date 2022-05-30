@@ -1,0 +1,130 @@
+/*---------------------------------------CSS NAVBAR---------------------------------------*/ 
+
+/*logo de la copa del mundo*/
+.logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*container del titulo y el logo en el nav*/
+.title-logo {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    margin: 0%;
+    font-size: 1.1vmax;
+}
+
+/*estilo del navbar*/
+.navbar {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/bgs/bg_nav.webp);
+    background-size: cover;
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    color: white;
+    text-shadow: $borde-y-sombra-blanco
+}
+
+/*estilo del texto del titulo*/
+.brand-title {
+    font-size: 25px;
+    margin: .2rem;
+    padding:0px;
+}
+
+/*estilo de los links del navbar*/
+.navbar-links {
+    height: 100%;
+  
+    /*estilo de la lista no ordenada de las paginas del navbar*/
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*estilo de los elementos de la lista*/
+    li {
+        list-style: none;
+        height: 100%;
+        /*estilo de los links dentro de los elementos de la lista*/
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: "Qatar2022" ,Arial,Helvetica;
+            color: white;
+            font-size: 16px;
+            font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+            padding: 6px;  
+        }
+    }
+}
+
+
+
+
+
+  
+/*transicion cuando pasa el cursor sobre una opcion del navbar*/
+.navbar-links li a:hover {
+    color: gray;
+}
+
+/*estilo de la lista no ordenada de las paginas del navbar*/
+.toggle-button {
+    position: absolute;
+    top: 3vh;
+    right: 1vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 19px;
+}
+
+/*estilo de las 3 barras del menu hamburguesa*/
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*media query para vista mobile del navbar*/
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+} 

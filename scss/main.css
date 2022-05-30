@@ -1,32 +1,10 @@
 @charset "UTF-8";
 @import url("http://fonts.cdnfonts.com/css/qatar2022");
-/*---------------------------------------CSS GENERALES---------------------------------------*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0%;
-}
-
-body {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  max-width: 100vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/*---------------------------------------CSS HEADERS---------------------------------------*/
+/*---------------------------------------VARIABLES---------------------------------------*/
+/*sombra y bordes para textos en blanco*/
+/*sombra y bordes para textos en negro*/
+/*color bordo de la bandera de Qatar*/
+/*---------------------------------------CSS NAVBAR---------------------------------------*/
 /*logo de la copa del mundo*/
 .logo {
   margin: 0%;
@@ -71,7 +49,7 @@ body::-webkit-scrollbar {
 
 /*estilo del texto del titulo*/
 .brand-title {
-  font-size: 2.7vmax;
+  font-size: 25px;
   margin: .2rem;
   padding: 0px;
 }
@@ -102,8 +80,9 @@ body::-webkit-scrollbar {
   text-decoration: none;
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: white;
+  font-size: 16px;
   font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
-  padding: 1rem;
+  padding: 6px;
 }
 
 /*transicion cuando pasa el cursor sobre una opcion del navbar*/
@@ -331,7 +310,7 @@ hr.solid {
   border-collapse: collapse;
   font-size: 16px;
   max-height: 30px;
-  max-width: 276px;
+  max-width: 250px;
   width: 80vw;
   -webkit-box-shadow: 2px 2px 4px #000000;
           box-shadow: 2px 2px 4px #000000;
@@ -405,18 +384,6 @@ td {
   padding-left: 1%;
   font-size: 16px;
   text-align: left;
-}
-
-/*---------------------------------------CSS FOOTER---------------------------------------*/
-/*estilo general del footer*/
-footer {
-  font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
-  /*estilo de los iconos del footer*/
-}
-
-footer img {
-  width: 40px;
-  margin-bottom: 0;
 }
 
 /*---------------------------------------CSS CALENDARIO---------------------------------------*/
@@ -571,6 +538,44 @@ del contenido*/
 .calendario__resultado {
   width: 5%;
   min-width: 20px;
+}
+
+/*---------------------------------------CSS FOOTER---------------------------------------*/
+/*estilo general del footer*/
+footer {
+  font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+  /*estilo de los iconos del footer*/
+}
+
+footer img {
+  width: 40px;
+  margin-bottom: 0;
+}
+
+/*---------------------------------------CSS GENERALES---------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+}
+
+body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  max-width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /*---------------------------------------CSS R2WC---------------------------------------*/

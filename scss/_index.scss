@@ -1,0 +1,129 @@
+/*---------------------------------------CSS INDEX---------------------------------------*/ 
+
+/*estilo del contenedor del titulo "grupos"*/
+.index__titulo__grupos {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+/*estilo de las decoraciones al costado de donde dice grupos*/
+.titulo__decoration {
+    width:10vmax;
+}
+
+/*estilo del titulo que dice Grupos*/
+.grupos {
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    color:#5d0f26;
+    font-size: 3vmax;
+    text-align: center;
+    margin:10px;
+    margin-left: 4%;
+    margin-right:4%;
+}
+
+/*estilo del fondo detras de las tablas de posiciones*/
+#tablas {
+    background-image: url(../assets/bgs/bg_grupos.webp);
+    background-size: cover;
+    text-align: center;
+    margin: 0px;
+}
+
+/*estilo de los textos de los grupos A-H que estan encima de las tablas*/
+.table__caption {
+    font-family: "Qatar2022" ,Arial,Helvetica;
+    color:white;
+    margin:10px;
+    font-size: 2.2vmax;
+    text-shadow: $borde-y-sombra-blanco;
+}
+
+/*estilo que separa las tablas con los grupos en 2 grupos de 4*/
+.faseGrupos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+/*estilo de las tablas de posiciones*/
+.tabla {
+    background-color: white;
+    border: 2px solid #5d0f26;
+    font-family:"Qatar2022" ,Arial,Helvetica;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 16px;
+    max-height:30px;
+    max-width:250px;
+    width:80vw;
+    box-shadow: 2px 2px 4px #000000;
+
+    /*estilo de la las celdas de la tabla*/
+    td {
+        border: black 1px solid;
+    }
+}
+
+
+
+/*estilo que separa las tablas con los grupos en 2 grupos de 4*/
+.index__thead {
+    background-color: #5d0f26;
+    color:white;
+    border:black 1px solid;
+}
+
+/*estilo de los bordes internos de las tablas*/
+td {
+    padding:0%;
+}
+
+/*estilo de la celda contenedora del nombre del pais y la bandera*/
+.td__teamNflag {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin:0px;
+}
+
+/*estilo de las banderas dentro de las tablas*/
+.flag {
+    width:20%;
+    margin:0;
+    padding:0;
+    margin-right: 5%;
+}
+
+/*estilo del texto acompañando a la bandera dentro de la celda*/
+.team {
+    padding: 0%;
+    margin:0%;
+}
+
+/*estilo que agrega el verde a los 2 primeros de cada grupo*/
+.clasificados {
+    background-color: rgb(92, 209, 56);
+}
+
+/*estilo del texto aclaracion debajo de las tablas de grupos*/
+.aclaracion {
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin:0px;
+    font-size: 1.5vmax;
+    font-family:"Qatar2022" ,Arial,Helvetica;
+    text-shadow: $borde-y-sombra-negro;
+}
+
+/*estilo de la lista no ordenada de las paginas del navbar*/
+#aclaracion__index {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    font-size: 16px;
+    text-align: left;
+}
