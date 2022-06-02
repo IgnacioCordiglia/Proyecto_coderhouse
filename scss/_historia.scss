@@ -1,0 +1,58 @@
+/*---------------------------------------CSS HISTORIA---------------------------------------*/ 
+
+/*estilo del body de la pagina*/
+.body__historia {
+    background-image: url(../assets/bgs/bg_grupos.webp);
+    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/*estilo del container con la tabla y el carousel*/
+.tabla__imagen__historia {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/*estilo del titulo encima de la tabla*/
+.titulo__historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilo de las decoraciones al costado de donde dice grupos*/
+.titulo__decoration__historia {
+    width:8vmax;
+}
+
+/*estilo de las celdas cabecera de la tabla*/
+.tablaHistoria thead {
+    background-color: #5d0f26;
+    color:white;
+    border: black solid 2px;
+}
+
+/*estilo del container con la tabla y el carousel*/
+.tablaHistoria {
+    background-color: white;
+    border: 2px solid #5d0f26;
+    font-family:"Qatar2022" ,Arial,Helvetica;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-size: 1,5vmax;
+    min-width:220px;
+    width:80vw;
+    margin-bottom: 3%;
+    box-shadow: 2px 2px 4px #000000;
+
+    /*estilo de las celdas de las tablas*/
+    td {
+        border: 1px solid black;
+    }   
+}
