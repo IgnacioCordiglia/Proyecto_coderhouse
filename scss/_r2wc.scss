@@ -6,7 +6,41 @@ $table-width: (
     oceania:30vw
 );
 
+@mixin match-status ($bg-color, $tx-color) {
+    background-color: $bg-color;
+    color:$tx-color;
+}
+
+
 /*---------------------------------------CSS R2WC---------------------------------------*/
+
+/*estilo para las tablas en r2wc e historia*/
+.tablaEliminatorias {
+    background-color: white;
+    border: 2px solid #5d0f26;
+    font-family:"Qatar2022" ,Arial,Helvetica;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width:200px;
+    width:map-get($map: $table-width, $key: oceania);
+    margin-bottom: 3%;
+    min-height: 260px;
+    box-shadow: 2px 2px 4px #000000;
+
+    /*estilo de las celdas cabeceras de las tablas*/
+    th{
+        font-size: 16px;
+        background-color: #5d0f26;
+        color:white;
+        border: 2px solid black;
+    }
+
+    /*estilo de las celdas de las tablas*/
+    td {
+        border:1px solid black;
+    }
+}
 
 
 /*estilo del titulo "camino al mundial"*/
@@ -58,7 +92,6 @@ $table-width: (
 /*estilo de la tabla sudamericana*/
 #elimAmerica {
     width:map-get($map: $table-width, $key: america);
-    min-width:200px;
     box-shadow: 2px 2px 4px #000000;
 
     /*estilo de las celdas de la tabla sudamericana*/
@@ -77,60 +110,19 @@ $table-width: (
 
 /*estilo de las tablas europeas*/
 .tablaEliminatoriasEuropa {
-    background-color: white;
-    border: 2px solid #5d0f26;
-    font-family:"Qatar2022" ,Arial,Helvetica;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 14px;
-    min-width:200px;
+    @extend .tablaEliminatorias;
     width:map-get($map: $table-width, $key: europa);
-    margin-bottom: 3%;
     min-height: 200px;
-    box-shadow: 2px 2px 4px #000000;
-
-    /*estilo de las celdas cabecera de las tablas eurpoeas*/
-    th {
-        font-size: 16px;
-        background-color: #5d0f26;
-        color:white;
-        border: 2px solid black;
-    }
-
-    /*estilo de las celdas de las tablas eurpoeas*/
-    td {
-        border:1px solid black;
-    }
 }
 
 
 
 /*estilo de las tablas africanas*/
 .tablaEliminatoriasAfrica {
-    background-color: white;
-    border: 2px solid #5d0f26;
-    font-family:"Qatar2022" ,Arial,Helvetica;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 14px;
+    @extend .tablaEliminatorias;
     min-width:200px;
     width:map-get($map: $table-width, $key: africa);
-    margin-bottom: 3%;
     min-height: 160px;
-    box-shadow: 2px 2px 4px #000000;
-
-    /*estilo de las celdas cabecera de las tablas africanas*/
-    th {
-        font-size: 16px;
-        background-color: #5d0f26;
-        color:white;
-        border: 2px solid black;
-    }
-
-    /*estilo de las celdas de las tablas africanas*/
-    td {
-        border:1px solid black;
-    }
 }
 
 
@@ -140,36 +132,6 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 .seleccionEuropa {
     width: 70%;
 }
-
-/*estilo para las tablas en r2wc e historia*/
-.tablaEliminatorias {
-    background-color: white;
-    border: 2px solid #5d0f26;
-    font-family:"Qatar2022" ,Arial,Helvetica;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 14px;
-    min-width:225px;
-    width:map-get($map: $table-width, $key: oceania);
-    margin-bottom: 3%;
-    min-height: 260px;
-    box-shadow: 2px 2px 4px #000000;
-
-    /*estilo de las celdas cabeceras de las tablas*/
-    th{
-        font-size: 16px;
-        background-color: #5d0f26;
-        color:white;
-        border: 2px solid black;
-    }
-
-    /*estilo de las celdas de las tablas*/
-    td {
-        border:1px solid black;
-    }
-}
-
-
 
 /*estilo los titulos encima de las tablas de posiciones de cada continente en r2wc*/
 .titulosEliminatorias {
@@ -212,31 +174,19 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 }
 }
 
-
-
-
-
-
 /*estilo de la celda con el estado del partido postergado*/
 .postergado {
-    background-color: green;
-    width:8%;
-    font-size: 1.5vmax;
+    @include match-status(green, black);
 }
 
 /*estilo de la celda con el estado del partido finalizado*/
 .finalizado {
-    background-color: gray;
-    width:8%;
-    font-size: 1.5vmax;
+    @include match-status(gray, black);
 }
 
 /*estilo de la celda con el estado del partido suspendido*/
 .suspendido {
-    background-color:red;
-    color:white;
-    width:8%;
-    font-size: 1.5vmax;
+    @include match-status(red, white);
 }
 
 /*estilo para marcar a los equipos que debieron jugar repechaje en*/

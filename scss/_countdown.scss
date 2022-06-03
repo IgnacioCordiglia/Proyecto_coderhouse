@@ -11,7 +11,6 @@
     background-position-y: center;
     background-size: cover;
     display:grid;
-    grid-template-rows:0.3fr 0.3fr 0.3fr;
     text-shadow: $borde-y-sombra-negro;
 
     /*estilo de las banderas dentro del countdown*/
@@ -48,9 +47,6 @@
     display:flex;
     justify-content: center;
 }
-  
-
-
 
 /*estilo del contenedor de los nombres de los paises debajo de las banderas*/
 .countdown__teams {

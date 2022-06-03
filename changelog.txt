@@ -1,0 +1,6 @@
+cambios:
+-nuevo map en r2wc con los distintos anchos correspondientes a cada tabla
+-el ancho de algunas de las tablas de r2wc fueron cambiadas
+-actualizado con los resultados de gales-ucrania
+-@extend utilizado en r2wc con tablaEliminatorias, tablasEliminatoriasAfrica y tablaEliminatoriasAsia
+-@mixin utilizado para determinar el estado del partido en r2wc, afecta clases "finalizado", "suspendido" y "postergado"

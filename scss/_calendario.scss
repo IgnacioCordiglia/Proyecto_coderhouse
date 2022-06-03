@@ -53,11 +53,11 @@
     text-shadow: $borde-y-sombra-negro
 }
 
-/*estilo para el texto de fecha encima de las tablas enindicando la fecha en calendario*/
+/*estilo para el texto de fecha encima de las tablas indicando la fecha en calendario*/
 .fechaPartido {
     background-color: black;
     color:white;
-    font-size: 2vmax;
+    font-size: 16px;
 }
 
 /*estilo de las celdas que contienen los horarios de los partidos en calendario*/
@@ -76,7 +76,7 @@ a veces ciertas banderas con blanco se ven mal*/
     /*estilo de las celdas dentro de las tabla*/
     td {
     border: black 1px solid;
-}
+    }
 }
 
 
