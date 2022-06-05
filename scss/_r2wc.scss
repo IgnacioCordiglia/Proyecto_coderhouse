@@ -6,6 +6,13 @@ $table-width: (
     oceania:30vw
 );
 
+$font-sizes: (
+    main-title: 2.5vmax,
+    sub-title: 2vmax,
+    text: 1.5vmax,
+    s-text:1vmax
+);
+
 @mixin match-status ($bg-color, $tx-color) {
     background-color: $bg-color;
     color:$tx-color;
@@ -21,7 +28,7 @@ $table-width: (
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: map-get($map: $font-sizes, $key:text );
     min-width:200px;
     width:map-get($map: $table-width, $key: oceania);
     margin-bottom: 3%;
@@ -30,7 +37,7 @@ $table-width: (
 
     /*estilo de las celdas cabeceras de las tablas*/
     th{
-        font-size: 16px;
+        font-size: 14px;
         background-color: #5d0f26;
         color:white;
         border: 2px solid black;
@@ -47,8 +54,8 @@ $table-width: (
 .camino__mundial {
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:#5d0f26;
-    font-size: 2.5vmax;
-    margin:1%;
+    font-size: map-get($map: $font-sizes, $key: main-title);
+    margin:10px;
     text-align: center;
     margin-left: 4%;
     margin-right:4%;
@@ -85,7 +92,7 @@ $table-width: (
     margin-bottom:5%;
     font-family:"Qatar2022" ,Arial,Helvetica;
     color: white;
-    font-size: 3vmax;
+    font-size: map-get($map: $font-sizes, $key: sub-title);
     text-shadow: $borde-y-sombra-blanco;
 }
 
@@ -135,7 +142,7 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 
 /*estilo los titulos encima de las tablas de posiciones de cada continente en r2wc*/
 .titulosEliminatorias {
-    font-size: 2vmax;
+    font-size: map-get($map: $font-sizes, $key: sub-title);
     padding-bottom: 0.5%;
     padding-top: 0.5%;
     color: #5d0f26;
@@ -197,7 +204,7 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 /*estilo para los textos explicando como funciona cada eliminatoria debajo de las tablas*/
 .r2wc__aclaracion {
     font-family: 'Qatar2022',Arial, Helvetica, sans-serif;
-    font-size: 1.5vmax;
+    font-size: map-get($map: $font-sizes, $key: text);
     max-width: 100%;
     text-shadow: $borde-y-sombra-negro
 }

@@ -1,5 +1,12 @@
 /*---------------------------------------CSS NAVBAR---------------------------------------*/ 
 
+$font-sizes: (
+    main-title: 2.5vmax,
+    sub-title: 2vmax,
+    text: 1.5vmax,
+    s-text:1vmax
+);
+
 /*logo de la copa del mundo*/
 .logo {
     margin: 0%;
@@ -13,7 +20,6 @@
     align-items: center;
     font-family: "Qatar2022" ,Arial,Helvetica;
     margin: 0%;
-    font-size: 1.1vmax;
 }
 
 /*estilo del navbar*/
@@ -32,9 +38,9 @@
 
 /*estilo del texto del titulo*/
 .brand-title {
-    font-size: 25px;
     margin: .2rem;
     padding:0px;
+    font-size: map-get($map: $font-sizes, $key: main-title);
 }
 
 /*estilo de los links del navbar*/
@@ -58,7 +64,7 @@
             text-decoration: none;
             font-family: "Qatar2022" ,Arial,Helvetica;
             color: white;
-            font-size: 16px;
+            font-size: map-get($map: $font-sizes, $key: text);
             font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
             padding: 6px;  
         }
@@ -109,19 +115,20 @@
     .navbar-links {
         display: none;
         width: 100%;
-    }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
+        ul {
+            width: 100%;
+            flex-direction: column;
 
-    .navbar-links ul li {
-        text-align: center;
-    }
+            li {
+                text-align: center;
 
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
+                a {
+                    padding: .5rem 1rem;
+                    font-size: map-get($map: $font-sizes, $key: sub-title);
+                }
+            }
+        }
     }
 
     .navbar-links.active {

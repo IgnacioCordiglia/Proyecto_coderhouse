@@ -3,6 +3,7 @@
 /*estilo general del footer*/
 footer {
     font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+    font-size: map-get($map: $font-sizes, $key: text);
 
     /*estilo de los iconos del footer*/
     img {

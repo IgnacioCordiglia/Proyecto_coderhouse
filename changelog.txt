@@ -4,3 +4,9 @@ cambios:
 -actualizado con los resultados de gales-ucrania
 -@extend utilizado en r2wc con tablaEliminatorias, tablasEliminatoriasAfrica y tablaEliminatoriasAsia
 -@mixin utilizado para determinar el estado del partido en r2wc, afecta clases "finalizado", "suspendido" y "postergado"
+-mapa con los anchos de las distintas tablas de las eliminatorias agregado
+-mapa con distintos tamaños de fuentes creado para mejor cohesion
+-por este cambio, alguno de los font sizes de todas las paginas han sido cambiados
+-Gales agreado al grupo B al vencer a Ucrania en el repechaje
+-agregadas banderas en menor resolucion y srcset aplicado en index
+-las banderas mas simples como la de Belgica o Alemania fueron directamente reemplazadas

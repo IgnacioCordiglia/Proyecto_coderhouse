@@ -1,6 +1,12 @@
 
 /*---------------------------------------CSS CALENDARIO---------------------------------------*/ 
 
+$font-sizes: (
+    main-title: 2.5vmax,
+    sub-title: 2vmax,
+    text: 1.5vmax,
+    s-text:1vmax
+);
 
 /*estilo de la tabla de los partidos con horarios en calendario*/
 .horarios {
@@ -21,7 +27,7 @@
 .calendarios {
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:#5d0f26;
-    font-size: 3vmax;
+    font-size: map-get($map: $font-sizes, $key: main-title);
     text-align: center;
     margin:10px;
     margin-left: 4%;
@@ -47,6 +53,7 @@
 /*estilo las fechas encima de la tabla con los partidos*/
 .table__caption__calendario {
     text-align: center;
+    font-size: map-get($map: $font-sizes, $key: sub-title);
     padding-top:3%;
     font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
     color: black;
@@ -57,7 +64,7 @@
 .fechaPartido {
     background-color: black;
     color:white;
-    font-size: 16px;
+    font-size: map-get($map: $font-sizes, $key: sub-title);
 }
 
 /*estilo de las celdas que contienen los horarios de los partidos en calendario*/

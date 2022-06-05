@@ -1,3 +1,10 @@
+$font-sizes: (
+    main-title: 2.5vmax,
+    sub-title: 2vmax,
+    text: 1.5vmax,
+    s-text:1.2vmax
+);
+
 /*---------------------------------------CSS INDEX---------------------------------------*/ 
 
 /*estilo del contenedor del titulo "grupos"*/
@@ -16,7 +23,7 @@
 .grupos {
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:#5d0f26;
-    font-size: 3vmax;
+    font-size: map-get($map: $font-sizes, $key: main-title);
     text-align: center;
     margin:10px;
     margin-left: 4%;
@@ -26,7 +33,7 @@
 /*estilo del fondo detras de las tablas de posiciones*/
 #tablas {
     background-image: url(../assets/bgs/bg_grupos.webp);
-    background-size: cover;
+    background-size:cover;
     text-align: center;
     margin: 0px;
 }
@@ -36,7 +43,7 @@
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:white;
     margin:10px;
-    font-size: 2.2vmax;
+    font-size: map-get($map: $font-sizes, $key: sub-title);
     text-shadow: $borde-y-sombra-blanco;
 }
 
@@ -55,12 +62,13 @@
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
     border-collapse: collapse;
-    font-size: 16px;
-    max-height:30px;
+    font-size: map-get($map: $font-sizes, $key: s-text);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
     max-width:250px;
     width:80vw;
     box-shadow: 2px 2px 4px #000000;
-
     /*estilo de la las celdas de la tabla*/
     td {
         border: black 1px solid;
@@ -92,8 +100,6 @@ td {
 /*estilo de las banderas dentro de las tablas*/
 .flag {
     width:20%;
-    margin:0;
-    padding:0;
     margin-right: 5%;
 }
 
@@ -111,19 +117,11 @@ td {
 /*estilo del texto aclaracion debajo de las tablas de grupos*/
 .aclaracion {
     padding-left: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin:0px;
-    font-size: 1.5vmax;
+    font-size: map-get($map: $font-sizes, $key: text);
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-shadow: $borde-y-sombra-negro;
 }
 
-/*estilo de la lista no ordenada de las paginas del navbar*/
-#aclaracion__index {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    font-size: 16px;
-    text-align: left;
-}

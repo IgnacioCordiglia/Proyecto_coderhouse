@@ -6,6 +6,7 @@
 /*color bordo de la bandera de Qatar*/
 /*---------------------------------------CSS NAVBAR---------------------------------------*/
 /*logo de la copa del mundo*/
+@import url("http://fonts.cdnfonts.com/css/qatar2022");
 .logo {
   margin: 0%;
   padding: 0%;
@@ -24,7 +25,6 @@
           align-items: center;
   font-family: "Qatar2022" ,Arial,Helvetica;
   margin: 0%;
-  font-size: 1.1vmax;
 }
 
 /*estilo del navbar*/
@@ -49,9 +49,9 @@
 
 /*estilo del texto del titulo*/
 .brand-title {
-  font-size: 25px;
   margin: .2rem;
   padding: 0px;
+  font-size: 2.5vmax;
 }
 
 /*estilo de los links del navbar*/
@@ -80,7 +80,7 @@
   text-decoration: none;
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: white;
-  font-size: 16px;
+  font-size: 1.5vmax;
   font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
   padding: 6px;
 }
@@ -147,6 +147,7 @@
   }
   .navbar-links ul li a {
     padding: .5rem 1rem;
+    font-size: 2vmax;
   }
   .navbar-links.active {
     display: -webkit-box;
@@ -170,10 +171,12 @@
 }
 
 .countdown img {
-  width: 25vw;
-  height: 17vw;
+  width: 15vw;
+  height: 10vw;
   max-width: 210px;
   max-height: 140px;
+  min-width: 75px;
+  min-height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -184,17 +187,17 @@
 /*estilo del titulo del contador*/
 .countdown__title {
   text-align: center;
-  font-size: 3vmax;
+  font-size: 2.5vmax;
   font-family: "Qatar2022" ,Arial,Helvetica;
   margin: 0;
-  margin-top: 2%;
+  margin-top: 10px;
 }
 
 /*estilo del texto del contador*/
 #demo {
   margin-top: 1%;
   color: black;
-  font-size: 2vmax;
+  font-size: 1.7vmax;
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 4px #000000;
 }
 
@@ -219,15 +222,8 @@
   margin-bottom: 1%;
 }
 
-/*estilo de los nombres de los paises debajo de las banderas del contador*/
-.countdown__teams__black1 {
-  font-family: "Qatar2022" ,Arial,Helvetica;
-  font-size: 2vmax;
-}
-
-.countdown__teams__black2 {
-  font-family: "Qatar2022" ,Arial,Helvetica;
-  font-size: 2vmax;
+.nombre__paises {
+  font-size: 1.7vmax;
 }
 
 /*estilo de las lineas separadoras*/
@@ -259,7 +255,7 @@ hr.solid {
 .grupos {
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: #5d0f26;
-  font-size: 3vmax;
+  font-size: 2.5vmax;
   text-align: center;
   margin: 10px;
   margin-left: 4%;
@@ -279,7 +275,7 @@ hr.solid {
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: white;
   margin: 10px;
-  font-size: 2.2vmax;
+  font-size: 2vmax;
   text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 4px #000000;
 }
 
@@ -306,7 +302,7 @@ hr.solid {
   font-family: "Qatar2022" ,Arial,Helvetica;
   text-align: center;
   border-collapse: collapse;
-  font-size: 16px;
+  font-size: 1.5vmax;
   max-height: 30px;
   max-width: 250px;
   width: 80vw;
@@ -348,8 +344,6 @@ td {
 /*estilo de las banderas dentro de las tablas*/
 .flag {
   width: 20%;
-  margin: 0;
-  padding: 0;
   margin-right: 5%;
 }
 
@@ -367,21 +361,12 @@ td {
 /*estilo del texto aclaracion debajo de las tablas de grupos*/
 .aclaracion {
   padding-left: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0px;
   font-size: 1.5vmax;
   font-family: "Qatar2022" ,Arial,Helvetica;
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 4px #000000;
-}
-
-/*estilo de la lista no ordenada de las paginas del navbar*/
-#aclaracion__index {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%;
-  font-size: 16px;
-  text-align: left;
 }
 
 /*---------------------------------------CSS CALENDARIO---------------------------------------*/
@@ -405,7 +390,7 @@ td {
 .calendarios {
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: #5d0f26;
-  font-size: 3vmax;
+  font-size: 2.5vmax;
   text-align: center;
   margin: 10px;
   margin-left: 4%;
@@ -438,6 +423,7 @@ td {
 /*estilo las fechas encima de la tabla con los partidos*/
 .table__caption__calendario {
   text-align: center;
+  font-size: 2vmax;
   padding-top: 3%;
   font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
   color: black;
@@ -448,7 +434,7 @@ td {
 .fechaPartido {
   background-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 2vmax;
 }
 
 /*estilo de las celdas que contienen los horarios de los partidos en calendario*/
@@ -625,7 +611,7 @@ del contenido*/
   font-family: "Qatar2022" ,Arial,Helvetica;
   text-align: center;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 1.5vmax;
   min-width: 200px;
   width: 30vw;
   margin-bottom: 3%;
@@ -637,7 +623,7 @@ del contenido*/
 }
 
 .tablaEliminatorias th, .tablaEliminatoriasEuropa th, .tablaEliminatoriasAfrica th {
-  font-size: 16px;
+  font-size: 14px;
   background-color: #5d0f26;
   color: white;
   border: 2px solid black;
@@ -652,7 +638,7 @@ del contenido*/
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: #5d0f26;
   font-size: 2.5vmax;
-  margin: 1%;
+  margin: 10px;
   text-align: center;
   margin-left: 4%;
   margin-right: 4%;
@@ -701,7 +687,7 @@ del contenido*/
   margin-bottom: 5%;
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: white;
-  font-size: 3vmax;
+  font-size: 2vmax;
   text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 4px #000000;
 }
 
@@ -834,6 +820,7 @@ se que el nombre implica que solo se usa en las tablas europeas, pero se usa en 
 /*estilo general del footer*/
 footer {
   font-family: 'Qatar2022', Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
   /*estilo de los iconos del footer*/
 }
 
