@@ -10,3 +10,9 @@ cambios:
 -Gales agreado al grupo B al vencer a Ucrania en el repechaje
 -agregadas banderas en menor resolucion y srcset aplicado en index
 -las banderas mas simples como la de Belgica o Alemania fueron directamente reemplazadas
+-alt agregado a todas las imgs de index
+
+-----------------------------------------------------NEW COMMIT---------------------------------------------------------------------------------
+
+-alt agregado a todas las imgs de calendario
+-ahora todas las tablas de calendario tienen la misma distribucion independientemente del contenido
