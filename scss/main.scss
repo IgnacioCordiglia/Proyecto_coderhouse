@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/qatar2022');
 @import "_variable";
 @import "_navbar";
 @import "_countdown";
@@ -8,10 +7,13 @@
 @import "_r2wc";
 @import "_footer";
 @import "_contactos";
-@import url("http://fonts.cdnfonts.com/css/qatar2022");
 
 /*---------------------------------------CSS GENERALES---------------------------------------*/ 
 
+@font-face {
+    font-family: 'Qatar2022';
+    src: url(../fonts/Qatar2022Arabic-Bold.ttf);
+}
 
 *{
     box-sizing: border-box;

@@ -1,12 +1,9 @@
 @charset "UTF-8";
-@import url("http://fonts.cdnfonts.com/css/qatar2022");
 /*---------------------------------------VARIABLES---------------------------------------*/
 /*sombra y bordes para textos en blanco*/
 /*sombra y bordes para textos en negro*/
 /*color bordo de la bandera de Qatar*/
-/*---------------------------------------CSS NAVBAR---------------------------------------*/
-/*logo de la copa del mundo*/
-@import url("http://fonts.cdnfonts.com/css/qatar2022");
+/*---------------------------------------CSS NAVBAR--------------
 .logo {
   margin: 0%;
   padding: 0%;
