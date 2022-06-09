@@ -20,7 +20,10 @@ cambios:
 
 -resto de assets de menor resolucion agregados
 
--------------------------------------------NEW COMMIT--------------------------------------------------------------
+------------------------------NEW COMMIT 53d0e20dd9339a713c881ed2c6ef2c344edbcc08------------------------------------
 
 -problema en el que el CSS de contactos no cargaba adecuadamente solucionado
 
+------------------------------NEW COMMIT------------------------------------
+
+-todas las imgs son responsive y tienen sus correspondientes alts
