@@ -513,7 +513,8 @@ del contenido*/
 .tablaEliminatoriasAfrica {
   min-width: 200px;
   width: 19vw;
-  min-height: 160px; }
+  min-height: 160px;
+  font-size: 15px; }
 
 /*estilo que hace que todas las tablas tengan la misma distribucion independientemente del titulo
 se que el nombre implica que solo se usa en las tablas europeas, pero se usa en la mayoria de las tablas*/

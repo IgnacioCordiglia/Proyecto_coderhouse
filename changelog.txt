@@ -16,3 +16,7 @@ cambios:
 
 -alt agregado a todas las imgs de calendario
 -ahora todas las tablas de calendario tienen la misma distribucion independientemente del contenido
+
+-----------------------------------------------------NEW COMMIT------------------------------------------------------
+
+-resto de assets de menor resolucion agregados
