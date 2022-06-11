@@ -1,3 +1,4 @@
 cambios:
 
--problema en que la bandera de Iran y la bandera de Suiza en index no cargaban debidamente
+-tamaño de letra del footer agrandado para vista mobile
+-tamaño de la letra del link a la pagina oficial de qatar 2022 agrandado para vista mobile
