@@ -1,6 +1,3 @@
-(a partir de ahora solo voy a poner los cambios de una version a otra, para ver cambios pasados, revisar el changelog del commit anterior)
+cambios:
 
--problema que causaba que los carousels en historia generacen overflow en x solucionado
--tamaño de las celdas de las tablas en historia ajustadp
--la letra en las tablas de historia ahora es mas grande en vista mobile
--cambio en la posicion del menu hamburgesa para que este bien posicionado independientemente de la resolucion
+-problema en que la bandera de Iran y la bandera de Suiza en index no cargaban debidamente
