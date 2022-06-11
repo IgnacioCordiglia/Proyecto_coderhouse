@@ -28,7 +28,11 @@
 
 -todas las imgs son responsive y tienen sus correspondientes alts
 
-------------------------------NEW COMMIT------------------------------------------------------------------------------
+------------------------------NEW COMMIT 5716aaac83324d9cdc23d613ab7db262a3384afa------------------------------------------------------------------------------
 
 -agregado alts faltantes
 -actualizado con los resultados de Australia-EUA
+
+------------------------------NEW COMMIT----------------------------------------------------------------
+
+-ids cambiados en contactos porque se repetian
