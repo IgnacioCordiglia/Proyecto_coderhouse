@@ -1,4 +1,4 @@
-cambios:
+ cambios:
 -nuevo map en r2wc con los distintos anchos correspondientes a cada tabla
 -el ancho de algunas de las tablas de r2wc fueron cambiadas
 -actualizado con los resultados de gales-ucrania
@@ -24,6 +24,11 @@ cambios:
 
 -problema en el que el CSS de contactos no cargaba adecuadamente solucionado
 
-------------------------------NEW COMMIT------------------------------------
+------------------------------NEW COMMIT 62dec67c7076f480a6ad2b04d945ddf48f069f9b------------------------------------
 
 -todas las imgs son responsive y tienen sus correspondientes alts
+
+------------------------------NEW COMMIT------------------------------------------------------------------------------
+
+-agregado alts faltantes
+-actualizado con los resultados de Australia-EUA
