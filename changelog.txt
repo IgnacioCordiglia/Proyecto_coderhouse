@@ -33,6 +33,10 @@
 -agregado alts faltantes
 -actualizado con los resultados de Australia-EUA
 
-------------------------------NEW COMMIT----------------------------------------------------------------
+------------------------------NEW COMMIT 8c9b0bff4e01943fc61d4042bf6db3e83da748fa----------------------------------------------------------------
 
 -ids cambiados en contactos porque se repetian
+
+------------------------------NEW COMMIT-----------------------------------------
+
+-styles.copy eliminado
