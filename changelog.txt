@@ -1,42 +1,6 @@
- cambios:
--nuevo map en r2wc con los distintos anchos correspondientes a cada tabla
--el ancho de algunas de las tablas de r2wc fueron cambiadas
--actualizado con los resultados de gales-ucrania
--@extend utilizado en r2wc con tablaEliminatorias, tablasEliminatoriasAfrica y tablaEliminatoriasAsia
--@mixin utilizado para determinar el estado del partido en r2wc, afecta clases "finalizado", "suspendido" y "postergado"
--mapa con los anchos de las distintas tablas de las eliminatorias agregado
--mapa con distintos tamaños de fuentes creado para mejor cohesion
--por este cambio, alguno de los font sizes de todas las paginas han sido cambiados
--Gales agreado al grupo B al vencer a Ucrania en el repechaje
--agregadas banderas en menor resolucion y srcset aplicado en index
--las banderas mas simples como la de Belgica o Alemania fueron directamente reemplazadas
--alt agregado a todas las imgs de index
+(a partir de ahora solo voy a poner los cambios de una version a otra, para ver cambios pasados, revisar el changelog del commit anterior)
 
-------------------------------NEW COMMIT 108686b5b0d09bae23702b4ef2801ff936279d37------------------------------------
--alt agregado a todas las imgs de calendario
--ahora todas las tablas de calendario tienen la misma distribucion independientemente del contenido
-
-------------------------------NEW COMMIT 0733d2f31bbfa7981fdc82fddcea90c390c66165-------------------------------------
-
--resto de assets de menor resolucion agregados
-
-------------------------------NEW COMMIT 53d0e20dd9339a713c881ed2c6ef2c344edbcc08------------------------------------
-
--problema en el que el CSS de contactos no cargaba adecuadamente solucionado
-
-------------------------------NEW COMMIT 62dec67c7076f480a6ad2b04d945ddf48f069f9b------------------------------------
-
--todas las imgs son responsive y tienen sus correspondientes alts
-
-------------------------------NEW COMMIT 5716aaac83324d9cdc23d613ab7db262a3384afa------------------------------------------------------------------------------
-
--agregado alts faltantes
--actualizado con los resultados de Australia-EUA
-
-------------------------------NEW COMMIT 8c9b0bff4e01943fc61d4042bf6db3e83da748fa----------------------------------------------------------------
-
--ids cambiados en contactos porque se repetian
-
-------------------------------NEW COMMIT-----------------------------------------
-
--styles.copy eliminado
+-problema que causaba que los carousels en historia generacen overflow en x solucionado
+-tamaño de las celdas de las tablas en historia ajustadp
+-la letra en las tablas de historia ahora es mas grande en vista mobile
+-cambio en la posicion del menu hamburgesa para que este bien posicionado independientemente de la resolucion

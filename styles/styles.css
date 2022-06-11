@@ -66,8 +66,8 @@
 /*estilo de la lista no ordenada de las paginas del navbar*/
 .toggle-button {
   position: absolute;
-  top: 3vh;
-  right: 1vh;
+  top: 20px;
+  right: 10px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -82,7 +82,7 @@
   border-radius: 5px; }
 
 /*media query para vista mobile del navbar*/
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start; }
@@ -188,7 +188,7 @@ hr.solid {
   margin: 0px; }
 
 /*estilo de los textos de los grupos A-H que estan encima de las tablas*/
-.table__caption {
+.table__caption, .table__caption__historia {
   font-family: "Qatar2022" ,Arial,Helvetica;
   color: white;
   margin: 10px;
@@ -395,6 +395,9 @@ del contenido*/
   justify-content: space-evenly;
   align-items: center; }
 
+.td__historia {
+  width: 70%; }
+
 /*estilo del titulo encima de la tabla*/
 .titulo__historia {
   display: flex;
@@ -411,6 +414,12 @@ del contenido*/
   color: white;
   border: black solid 2px; }
 
+/*estilo del titulo de cada tabla*/
+.table__caption__historia {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 /*estilo del container con la tabla y el carousel*/
 .tablaHistoria {
   background-color: white;
@@ -419,7 +428,7 @@ del contenido*/
   text-align: center;
   border-collapse: collapse;
   border: 1px solid black;
-  font-size: 1.5vmax;
+  font-size: 18px;
   min-width: 220px;
   width: 80vw;
   margin-bottom: 3%;
