@@ -249,7 +249,8 @@ td {
 
 /*estilo que agrega el verde a los 2 primeros de cada grupo*/
 .clasificados {
-  background-color: #5cd138; }
+  background-color: #5cd138;
+  width: 75%; }
 
 /*estilo del texto aclaracion debajo de las tablas de grupos*/
 .aclaracion {

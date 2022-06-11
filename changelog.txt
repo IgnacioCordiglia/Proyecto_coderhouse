@@ -1,4 +1,3 @@
 cambios:
 
--tamaño de letra del footer agrandado para vista mobile
--tamaño de la letra del link a la pagina oficial de qatar 2022 agrandado para vista mobile
+-cambio de tamaño a las celdas de las tablas de index
