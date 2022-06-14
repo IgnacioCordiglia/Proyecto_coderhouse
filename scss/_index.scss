@@ -23,7 +23,7 @@ $font-sizes: (
 .grupos {
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:#5d0f26;
-    font-size: map-get($map: $font-sizes, $key: main-title);
+    font-size: 32px;
     text-align: center;
     margin:10px;
     margin-left: 4%;
@@ -43,7 +43,7 @@ $font-sizes: (
     font-family: "Qatar2022" ,Arial,Helvetica;
     color:white;
     margin:10px;
-    font-size: map-get($map: $font-sizes, $key: sub-title);
+    font-size: 20px;
     text-shadow: $borde-y-sombra-blanco;
 }
 
@@ -62,7 +62,7 @@ $font-sizes: (
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-align: center;
     border-collapse: collapse;
-    font-size: map-get($map: $font-sizes, $key: s-text);
+    font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom:10px;
@@ -121,7 +121,7 @@ td {
     padding-top: 10px;
     padding-bottom: 10px;
     margin:0px;
-    font-size: map-get($map: $font-sizes, $key: text);
+    font-size: 16px;
     font-family:"Qatar2022" ,Arial,Helvetica;
     text-shadow: $borde-y-sombra-negro;
 }
